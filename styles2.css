@@ -1,0 +1,519 @@
+* {
+   margin: 0;padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;   
+}
+
+/* ------CONTENIDOS------ */
+
+/* DESKTOP */
+@media (min-width: 1024px){
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      ". destacado destacado ."
+      "anterior anterior anterior anterior"
+      "form form form form"  
+      "footer footer footer footer ";
+      grid-template-rows: auto;
+      grid-template-columns: 2fr 3fr 3fr 2fr;
+      height: 100vh;
+      margin: 0;
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+ }
+ .border {
+    border: 1px solid black;
+ }
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#blogDestacado {
+    grid-area: destacado;
+        
+ }
+ section#blogAnterior {
+    grid-area: anterior;     
+ }
+ nav {
+    grid-area: nav;
+ }
+ aside#formulario {
+    grid-area: form;
+ }
+
+ /*Estilos*/
+
+ a {
+   text-decoration: none;
+   color: black;     
+}
+
+nav {
+   display: grid ;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   font-family: 'Comfortaa', sans-serif;
+   src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+   font-weight: bolder;
+   padding: 10px;   
+   height: 40px;
+} 
+
+h2 {
+   font-family: 'Lato', serif;
+   src: url(/fuentes/Lora/Lora-VariableFont_wght.ttf);
+   color: black;
+   font-size:x-large;
+   text-align: center;     
+}
+
+section {
+   display: flex;
+   height: 400px;
+   justify-content: space-evenly;
+   margin-top: 50px;
+        
+}
+.blogPpal{
+   display: inline-block;
+   color:black;
+   border: 1px solid black;   
+   height: 450px;
+   padding: 40px;
+   margin: 20px;
+   background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+.blog-secundario1 {
+   display: inline-block;
+   flex-direction: row;
+   width: 300px;
+   height: 250px;
+   padding: 10px;
+   margin: 20px;
+   background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.blog-secundario2 {
+   display: inline-block;
+   flex-direction: row;
+   width: 300px;
+   height: 250px;
+   padding: 10px;
+   margin: 20px;
+   background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+.blog-secundario3 {
+   display: inline-block;
+   flex-direction: row;
+   width: 300px;
+   height: 250px;
+   padding: 10px;
+   margin: 20px;
+   background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.parrafo-blog-ppal {
+   background-color: yellow;
+   font-family:'Comfortaa', sans-serif;
+   src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+   text-align: center;
+   padding: 20px;
+   font-weight:normal;
+   height: 50px;
+   margin-top: 50%;
+}
+
+.parrafo-blog {
+   background-color: yellow;
+   font-family:'Comfortaa', sans-serif;
+   src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+   text-align: center;
+   padding: 20px;
+   font-weight:normal;
+   height: 50px;
+   margin-top: 80%;
+}
+
+.form {
+   background-color: #DAFDBA;
+   text-align: center;
+   font-size: medium;
+   font-family: "Comfortaa", sans-serif;
+   src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+   padding: 1%;
+}
+
+footer {   
+   background-color: yellow;
+   padding: 12px;
+   text-align: center;
+   font-size: medium;
+   font-family: "Comfortaa", sans-serif;
+   src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+
+}
+}
+
+/* TABLET */
+
+@media (min-width: 480px) and (max-width:1023px) {
+   #grilla {
+      display: grid;
+      grid-template-areas:
+        "header header header header"
+        ". destacado destacado ."
+        "anterior anterior anterior anterior"
+        "form form form form"  
+        "footer footer footer footer ";
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+        height: 100vh;
+        margin: 0;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+   }
+   .border {
+      border: 1px solid black;
+   }
+   header {
+      grid-area: header;
+   }
+   footer {
+      grid-area: footer;
+   }
+   section#blogDestacado {
+      grid-area: destacado;
+          
+   }
+   section#blogAnterior {
+      grid-area: anterior;     
+   }
+   nav {
+      grid-area: nav;
+   }
+   aside#formulario {
+      grid-area: form;
+   }
+  
+   /*Estilos*/
+  
+   a {
+     text-decoration: none;
+     color: black;     
+  }
+  
+  nav {
+     display: grid ;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     font-family: 'Comfortaa', sans-serif;
+     src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+     font-weight: bolder;
+     padding: 10px;   
+     height: 40px;;
+  } 
+  
+  h2 {
+     font-family: 'Lato', serif;
+     src: url(/fuentes/Lora/Lora-VariableFont_wght.ttf);
+     color: black;
+     font-size:x-large;
+     text-align: center;     
+  }
+  
+  section {
+     display: flex;
+     height: 400px;
+     justify-content: space-evenly;
+     margin-top: 50px;     
+  }
+  .blogPpal{
+     display: inline-block;
+     color:black;
+     border: 1px solid black;   
+     
+     height: 450px;
+     padding: 40px;
+     margin: 20px;
+     background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     /*width: 800px;   */
+        align-content: center;
+  
+  }
+  
+  .blog-secundario1 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  }
+  
+  .blog-secundario2 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  
+  }
+  
+  .blog-secundario3 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  }
+  .parrafo-blog-ppal {
+     background-color: yellow;
+     font-family:'Comfortaa', sans-serif;
+     src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+     text-align: center;
+     padding: 20px;
+     font-weight:normal;
+     height: 50px;
+     margin-top: 60%;
+  }
+  
+  .parrafo-blog {
+     background-color: yellow;
+     font-family:'Comfortaa', sans-serif;
+     src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+     text-align: center;
+     padding: 20px;
+     font-weight:normal;
+     height: 50px;
+     margin-top: 80%;
+  }
+  
+  .form {
+     background-color: #DAFDBA;
+     text-align: center;
+     font-size: medium;
+     font-family: "Comfortaa", sans-serif;
+     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+     padding: 1%;
+  }
+  
+  footer {   
+     background-color: yellow;
+     padding: 12px;
+     text-align: center;
+     font-size: medium;
+     font-family: "Comfortaa", sans-serif;
+     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+  
+  }
+  }
+
+  /* MOBILE */
+
+@media (max-width:479px) {
+   #grilla {
+      display: grid;
+      grid-template-areas:
+        "header header header "
+        ". destacado  ."
+        ". anterior ."
+        "form form form"  
+        "footer footer footer ";
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 3fr 2fr;
+        height: 100vh;
+        margin: 0;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+   }
+   .border {
+      border: 1px solid black;
+   }
+   header {
+      grid-area: header;
+   }
+   footer {
+      grid-area: footer;
+   }
+   section#blogDestacado {
+      grid-area: destacado;
+          
+   }
+   section#blogAnterior {
+      grid-area: anterior;     
+   }
+   nav {
+      grid-area: nav;
+   }
+   aside#formulario {
+      grid-area: form;
+   }
+  
+   /*Estilos*/
+  
+   a {
+     text-decoration: none;
+     color: black;     
+  }
+  
+  nav {
+     display: grid ;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     font-family: 'Comfortaa', sans-serif;
+     src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+     font-weight: bolder;
+     padding: 10px;   
+     height: 30px;
+  } 
+  
+  h2 {
+     font-family: 'Lato', serif;
+     src: url(/fuentes/Lora/Lora-VariableFont_wght.ttf);
+     color: black;
+     font-size:x-large;
+     text-align: center;     
+  }
+  
+  section {
+     display: flex;
+     height: 400px;
+     justify-content: space-evenly;
+     margin-top: 50px;     
+  }
+  .blogPpal{
+   display: inline-block;
+   color:black;
+   border: 1px solid black;   
+   height: 450px;
+   padding: 40px;
+   margin: 20px;
+   background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   align-content: center;
+  
+  }
+  
+  .blog-secundario1 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  }
+  
+  .blog-secundario2 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  
+  }
+  
+  .blog-secundario3 {
+     display: inline-block;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     padding: 10px;
+     margin: 20px;
+     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+  }
+  .parrafo-blog-ppal {
+     background-color: yellow;
+     font-family:'Comfortaa', sans-serif;
+     src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+     text-align: center;
+     padding: 20px;
+     font-weight:normal;
+     height: 50px;
+     margin-top: 60%;
+  }
+  
+  .parrafo-blog {
+     background-color: yellow;
+     font-family:'Comfortaa', sans-serif;
+     src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
+     text-align: center;
+     padding: 20px;
+     font-weight:normal;
+     height: 50px;
+     margin-top: 80%;
+  }
+  
+  .form {
+     background-color: #DAFDBA;
+     text-align: center;
+     font-size: medium;
+     font-family: "Comfortaa", sans-serif;
+     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+     padding: 1%;
+  }
+  
+  footer {   
+     background-color: yellow;
+     padding: 12px;
+     text-align: center;
+     font-size: medium;
+     font-family: "Comfortaa", sans-serif;
+     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+  
+  }
+  }
