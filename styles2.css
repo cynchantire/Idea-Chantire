@@ -13,6 +13,7 @@
     display: grid;
     grid-template-areas:
       "header header header header"
+      ". titulo titulo ."
       ". destacado destacado ."
       "anterior anterior anterior anterior"
       "form form form form"  
@@ -33,6 +34,10 @@
  footer {
     grid-area: footer;
  }
+ h2 {
+   grid-area: titulo;
+}
+
  section#blogDestacado {
     grid-area: destacado;
         
@@ -51,6 +56,12 @@
 
  a {
    text-decoration: none;
+   color: gray;
+   padding: 10px;     
+}
+
+a:hover {
+   background-color:#DEE2FF;
    color: black;     
 }
 
@@ -64,34 +75,41 @@ nav {
    font-weight: bolder;
    padding: 10px;   
    height: 40px;
-} 
+}
+
+
 
 h2 {
    font-family: 'Lato', serif;
    src: url(/fuentes/Lora/Lora-VariableFont_wght.ttf);
-   color: black;
-   font-size:x-large;
-   text-align: center;     
+   color:#AC92DE;
+   font-size:48px;
+   text-align: center;
+   padding-top : 10px;
+   animation-duration: 3s;     
 }
+
 
 section {
    display: flex;
    height: 400px;
    justify-content: space-evenly;
    margin-top: 50px;
-        
 }
+
 .blogPpal{
    display: inline-block;
    color:black;
    border: 1px solid black;   
-   height: 450px;
+   height: 480px;
    padding: 40px;
-   margin: 20px;
+   margin-top: 20px;
    background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
    background-size:cover;
    background-repeat: no-repeat;
    background-position: center;
+   animation-duration: 2s;
+   animation-delay: 2s;
 
 }
 
@@ -135,29 +153,39 @@ section {
    background-position: center;
 }
 .parrafo-blog-ppal {
-   background-color: yellow;
+   background-image: background-color: #eaf818;
+   background-image: background-color: #eaf818;
+   background-image: background-color: #f39f86;
+   background-image: background-color: #f39f86;
+   background-image: background-color: #fbb034;
+   background-image: background-color: #f9d29d;
+   background-image: background-color: #fad0c4;
+   background-image: linear-gradient(to top, #eaf818 0%, #f6fc9c 74%);
+   
+   
    font-family:'Comfortaa', sans-serif;
    src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
    text-align: center;
    padding: 20px;
    font-weight:normal;
-   height: 50px;
-   margin-top: 50%;
+   height: 80px;
+   margin-top: 48%;
 }
 
 .parrafo-blog {
-   background-color: yellow;
+   background-image: linear-gradient(to top, #eaf818 0%, #f6fc9c 74%);
    font-family:'Comfortaa', sans-serif;
    src: url("fuentes/Comfortaa/static/Comfortaa-Medium.ttf");
    text-align: center;
    padding: 20px;
    font-weight:normal;
-   height: 50px;
+   font-size: small;
+   height: 70px;
    margin-top: 80%;
 }
 
 .form {
-   background-color: #DAFDBA;
+   background-color: #DEE2FF;
    text-align: center;
    font-size: medium;
    font-family: "Comfortaa", sans-serif;
@@ -166,7 +194,7 @@ section {
 }
 
 footer {   
-   background-color: yellow;
+   background-color: #FFFF9E;
    padding: 12px;
    text-align: center;
    font-size: medium;
