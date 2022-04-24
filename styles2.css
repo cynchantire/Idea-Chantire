@@ -1,5 +1,6 @@
 * {
-   margin: 0;padding: 0;
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
    font-family: sans-serif;   
 }
@@ -12,34 +13,30 @@
    #grilla-index {
       display: grid;
       grid-template-areas:
-         "header header header header"
-         "fondo fondo fondo fondo"
-         "form form form form"   
-         "footer footer footer footer ";
+         "header header header"
+         "fondo fondo fondo"
+         "anterior anterior anterior"
+         "footer footer footer";
       grid-template-rows: auto;
-      grid-template-columns: 2fr 3fr 3fr 2fr;
-      height: 100vh;
+      grid-template-columns: 2fr 2fr 2fr;
       margin: 0;
-      grid-row-gap: 10px;
-      grid-column-gap: 10px;
+      grid-row-gap: 3px;
+      grid-column-gap: 3px;
    }
     
    header {
       grid-area: header;
    }
-
-   nav {
-      grid-area: nav;
-   }
    
-   aside#formulario {
-      grid-area: form;
-   }
-
-   body {
+   div#fondo-imagen {
       grid-area: fondo;
    }
 
+   section#blogAnterior {
+      grid-area: anterior;
+      
+   }
+  
    footer {
       grid-area: footer;
    }
@@ -69,7 +66,6 @@
    .container-fluid {
       display:block;
       flex-direction: column;
-      background-color:white;
       display: flex;
    }
 
@@ -79,29 +75,22 @@
       margin-left: 5%;  
    }
    
-   #fondo-imagen {
+   .fondo-imagen {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin: 1%;
-      width: 100%;
-      }
-
-   .form {
-      background-color: #DEE2FF;
-      text-align: center;
-      font-size:small;
-      font-family: "Comfortaa", sans-serif;
-      src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-      padding: 1%;
    }
 
-   .mb-3 {   
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      padding: .1%;
-   }
+   .fuente-titulo-home {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    src: url(fuentes/Lora/static/Lora-Bold.ttf);
+    text-align:left;
+    line-height: 25px;
+    color:darkgray;
+    margin-left: 9%;
+    margin-top: -23%;
+    }  
 
    .btn-primary {   
       background-color:#FFFF9E;
@@ -117,7 +106,6 @@
    footer {
       display: flex;   
       background-color: #FFFF9E;
-      padding: 12px;
       text-align: center;
       font-size:small;
       font-weight:bolder;
@@ -133,12 +121,12 @@
    #grilla-index {
       display: grid;
       grid-template-areas:
-      "header header header header"
-      "fondo fondo fondo fondo"
-      "form form form form"   
-      "footer footer footer footer ";
+      "header header header"
+      "fondo fondo fondo"
+      ". anterior ."   
+      "footer footer footer ";
       grid-template-rows: auto;
-      grid-template-columns: 2fr 3fr 3fr 2fr;
+      grid-template-columns: 2fr 3fr 2fr;
       height: 100vh;
       margin: 0;
       grid-row-gap: 10px;
@@ -148,19 +136,16 @@
    header {
       grid-area: header;
    }
-
-   nav {
-      grid-area: nav;
-   }
    
-   aside#formulario {
-      grid-area: form;
-   }
-
-   body {
+   div#fondo-imagen {
       grid-area: fondo;
    }
 
+   section#blogAnterior {
+      grid-area: anterior;
+      
+   }
+  
    footer {
       grid-area: footer;
    }
@@ -190,7 +175,6 @@
    .container-fluid {
       display:block;
       flex-direction: column;
-      background-color:white;
       display: flex;
    }
 
@@ -200,31 +184,22 @@
       margin-left: 5%;  
    }
    
+
    .fondo-imagen {
-      background-image: url("imagenes/portada_web.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 1480px;
-      height: 800px;
-      margin: 1%;
-      }
-
-   .form {
-      background-color: #DEE2FF;
-      text-align: center;
-      font-size:small;
-      font-family: "Comfortaa", sans-serif;
-      src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-      padding: 1%;
    }
 
-   .mb-3 {   
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      padding: .1%;
-   }
+   .fuente-titulo-home {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    src: url(fuentes/Lora/static/Lora-Bold.ttf);
+    text-align:left;
+    line-height: 25px;
+    color:darkgray;
+    margin-left: 9%;
+   }  
 
    .btn-primary {   
       background-color:#FFFF9E;
@@ -257,10 +232,10 @@
       grid-template-areas:
          "header"
          "fondo"
-         "form"   
+         "anterior"   
          "footer";
       grid-template-rows: auto;
-      grid-template-columns: 2fr 2fr 2fr;
+      grid-template-columns: auto;
       height: 100vh;
       margin: 0;
       grid-row-gap: 10px;
@@ -270,23 +245,18 @@
    header {
       grid-area: header;
    }
-
-   nav {
-      grid-area: nav;
-   }
    
-   aside#formulario {
-      grid-area: form;
-   }
-
-   body {
+   div#fondo-imagen {
       grid-area: fondo;
    }
 
+   section#blogAnterior {
+      grid-area: anterior;
+   }
+  
    footer {
       grid-area: footer;
    }
-
 
    /* Estilos */
 
@@ -312,7 +282,6 @@
    .container-fluid {
       display:block;
       flex-direction: column;
-      background-color:white;
       display: flex;
    }
 
@@ -322,30 +291,22 @@
       margin-left: 5%;  
    }
    
-   .fondo-imagen {
-      background-image: url("imagenes/portada_web.png");
+   #fondo-imagen {
+      background-image: url(imagenes/portada_web.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 1480px;
-      height: 800px;
-      margin: 1%;
-      }
-
-   .form {
-      background-color: #DEE2FF;
-      text-align: center;
-      font-size:small;
-      font-family: "Comfortaa", sans-serif;
-      src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-      padding: 1%;
    }
 
-   .mb-3 {   
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      padding: .1%;
+   .fuente-titulo-home {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    src: url(fuentes/Lora/static/Lora-Bold.ttf);
+    text-align:left;
+    line-height: 20px;
+    color:darkgray;
+    margin-top: 10%;
+    height: 300px;
    }
 
    .btn-primary {   
@@ -411,9 +372,7 @@
    section#blogAnterior {
       grid-area: anterior;     
    }
-   nav {
-      grid-area: nav;
-   }
+   
    aside#formulario {
       grid-area: form;
    }
