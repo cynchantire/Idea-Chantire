@@ -1,5 +1,14 @@
 /*BLOG*/
 
+@import "sombras";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+
     /* DESKTOP */
 @media (min-width: 1024px){
 
@@ -65,39 +74,38 @@
                 margin-left: 5%;
             }
 
-            .nav-link:hover {
-                background-color:#DEE2FF;
-                color: black;
-            }
-            
             a {
                 text-decoration: none;
                 color: gray;
                 padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
             }
+        } 
+
+    .blogPpal{
+        display: grid;
+        color:black;
+        height: 480px;
+        width: 1000px;
+        padding: 20px;
+        margin-top: 20px;
+        background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
     }
- 
+
     section {
-       display: flex;
-       height: auto;
-       justify-content: space-evenly;
-       margin-top: 50px;
-       align-self: center;
-            .blogPpal{
-                display: grid;
-                color:black;
-                height: 480px;
-                width: 1000px;
-                padding: 20px;
-                margin-top: 20px;
-                background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
-                box-shadow: 5px 8px 12px #0F4572;
-            }
-  
+        display: flex;
+        height: auto;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        align-self: center;
+     
             .blog-secundario1 {
                 width: 300px;
                 height: 250px;
@@ -108,7 +116,6 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 border-radius: 20px;
-                box-shadow: 5px 8px 12px #0F4572;
             }
   
             .blog-secundario2 {
@@ -121,7 +128,6 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 border-radius: 20px;
-                box-shadow: 5px 8px 12px #0F4572;
             }
   
             .blog-secundario3 {
@@ -134,42 +140,40 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 border-radius: 20px;
-                box-shadow: 5px 8px 12px #0F4572;
             }
- 
- 
     }
     
-    aside  {
-    .form {
-        background-color: #DEE2FF;
-        text-align: center;
-        font-size:small;
-        font-family: "Comfortaa", sans-serif;
-        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-        padding: 1%;
-        margin: 0;
+    .form  {
+            background-color: #DEE2FF;
+            text-align: center;
+            font-size:small;
+            font-family: "Comfortaa", sans-serif;
+            src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            padding: 1%;
+            margin: 0;
     }
     
-    form  {
-        .mb-3 {
+    
+
+    div {
+        .mb-3  {
             display: flex;
             flex-direction: column;
             align-items:center;
-            padding: .1%;
-        }
+            padding: .1%; 
+            }       
 
         .btn-primary {
             background-color:#FFFF9E;
             color: black;
             outline-color: black;
-         }
-
-        .btn-primary:hover {
-            background-color:black;
-            color: white;
+            &:hover {
+                background-color:black;
+                color: white;
+                }
+            }
         }
-    }
+    
 
     footer {
         display: flex;
@@ -235,30 +239,43 @@
        font-family: 'Comfortaa', sans-serif;
        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
        font-weight: bolder;
-        
-        .nav-link:hover {
-            background-color:#DEE2FF;
-            color: black;
-        }
 
-        a {
-            text-decoration: none;
-            color: gray;
-            padding: 10px;
-        }
-
-        .container-fluid {
+       .container-fluid {
             display:block;
             flex-direction: column;
             background-color:white;
             display: flex;
-        }
+        } 
 
         .navbar-brand {
             align-self:flex-start;
             height: 20px;
             margin-left: 5%;
-        } 
+        }
+        
+        a {
+            text-decoration: none;
+            color: gray;
+            padding: 10px;
+            &:hover {
+                background-color:#DEE2FF;
+                color: black;
+                }
+        }
+    }
+
+    .blogPpal{
+        display: grid;
+        color:black;
+        height: 480px;
+        width: 1000px;
+        padding: 20px;
+        margin-top: 20px;
+        background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
     }
 
     section {
@@ -266,21 +283,7 @@
        height: auto;
        justify-content: space-evenly;
        margin-top: 50px;
-       align-self: center;
-       .blogPpal{
-            display: grid;
-            color:black;
-            height: 480px;
-            width: 1000px;
-            padding: 20px;
-            margin-top: 20px;
-            background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
-        }
+       align-self: center; 
 
         .blog-secundario1 {
             width: 300px;
@@ -292,7 +295,6 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
 
         .blog-secundario2 {
@@ -305,7 +307,6 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
 
         .blog-secundario3 {
@@ -318,10 +319,8 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
- 
- 
+
     }
  
     .form {
@@ -332,23 +331,25 @@
        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
        padding: 1%;
        margin: 0;
+    }
 
+        
+    section {
         .mb-3 {
             display: flex;
             flex-direction: column;
             align-items:center;
             padding: .1%;
-        }
-
+            }   
+       
         .btn-primary {
             background-color:#FFFF9E;
             color: black;
             outline-color: black;
-        }
-
-        .btn-primary:hover {
-            background-color:black;
-            color: white;
+            &:hover {
+                background-color:black;
+                color: white;
+            }
         }
     }
 
@@ -432,23 +433,23 @@
     section#blogDestacado {
        display: flex;
        height: 300px;
-       margin-top: 50px;
-        .blogPpal{
-            display: flex;
-            display: grid;
-            justify-self: center;
-            width: 350px;
-            padding: 10px;
-            margin: 10px;
-            background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
-     }
+       margin-top: 50px;        
     }
  
+    .blogPpal{
+        display: flex;
+        display: grid;
+        justify-self: center;
+        width: 350px;
+        padding: 10px;
+        margin: 10px;
+        background-image: url(https://debmedia.com/blog/wp-content/uploads/2020/02/customer-centric-1.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
+    }
+
     section#blogAnterior {
        display: flex;
        flex-direction: column;
@@ -469,7 +470,6 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
   
         .blog-secundario2 {
@@ -485,7 +485,6 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
 
         .blog-secundario3 {
@@ -501,7 +500,6 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            box-shadow: 5px 8px 12px #0F4572;
         }
     }
  
@@ -513,35 +511,37 @@
        font-family: "Comfortaa", sans-serif;
        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
        padding: 1%;
+        
+    }
 
+    div {
         .mb-3 {
             display: flex;
             flex-direction: column;
             align-items:center;
             padding: .1%;
         }
-        
+
         .btn-primary {
             background-color:#FFFF9E;
             color: black;
             outline-color: black;
-        }
-
-        .btn-primary:hover {
-            background-color:black;
-            color: white;
+            & hover {
+                background-color:black;
+                color: white;
+            }
         }
     }
  
-    footer {
-       display: flex;
-       background-color: #634478;
-       color: #DEE2FF;
-       padding: 12px;
-       text-align: center;
-       font-size:small;
-       font-weight:bolder;
-       font-family: "Comfortaa", sans-serif;
-       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+footer {
+        display: flex;
+        background-color: #634478;
+        color: #DEE2FF;
+        padding: 12px;
+        text-align: center;
+        font-size:small;
+        font-weight:bolder;
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);       
     }
-}}
+}
