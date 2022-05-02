@@ -105,43 +105,44 @@
         justify-content: space-evenly;
         margin-top: 50px;
         align-self: center;
-     
+
+        @mixin blogs ($width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+            .blog-secundario1  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2 {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+            
+            .blog-secundario3 {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
             .blog-secundario1 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
-                background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
+            background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
             }
   
-            .blog-secundario2 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
+            .blog-secundario2 {               
                 background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
             }
   
             .blog-secundario3 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
-                background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
+                background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);   
             }
-    }
+        }
     
     .form  {
             background-color: #DEE2FF;
@@ -283,42 +284,43 @@
        height: auto;
        justify-content: space-evenly;
        margin-top: 50px;
-       align-self: center; 
+       align-self: center;
+
+       @mixin blogs ($width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+            .blog-secundario1  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario3  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
 
         .blog-secundario1 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario2 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario3 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
     }
@@ -457,49 +459,46 @@
        justify-self: center;
        margin-top: 20px;
 
+       @mixin blogsmini ($display, $flex-direction, $flex-wrap, 
+            $width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                display: $display;
+                flex-direction: $flex-direction;
+                flex-wrap: $flex-wrap;
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+
+            .blog-secundario1  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario3  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
         .blog-secundario1 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
   
         .blog-secundario2 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario3 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
     }
  
@@ -545,3 +544,742 @@ footer {
         src: url(/fuentes/Comfortaa/Comfortaa.ttf);       
     }
 }
+
+
+/* ------PORTFOLIO------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    #grilla-portfolio {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          ". portada1 texto1 ."
+          ". portada2 texto2 ."
+          ". portada3 texto3 ."
+          " footer footer footer footer" ;
+        grid-template-rows: .8fr 8fr 8fr 8fr 0.5fr ;
+        grid-template-columns: 2fr 4fr 6fr 2fr;
+        height: 100vh;
+        margin: 0;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        align-items:center;
+    }
+ 
+        header {
+            grid-area: header;
+        }
+    
+        section#branding1 {
+            grid-area: portada1;
+        }
+    
+        section#recurso1 {
+            grid-area: texto1;
+    
+        }
+    
+        section#branding2 {
+            grid-area: portada2;
+        }
+    
+        section#recurso2 {
+            grid-area: texto2;
+    
+        }
+    
+        section#branding3 {
+            grid-area: portada3;
+        }
+    
+        section#recurso3 {
+            grid-area: texto3;
+    
+        }
+    
+        footer {
+            grid-area: footer;
+        }
+       
+    /*Estilos*/
+ 
+        nav {
+            display: grid;
+            display: flex;
+            font-family: 'Comfortaa', sans-serif;
+            src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+            font-weight: bolder;
+    
+                .container-fluid {
+                    display:block;
+                    flex-direction: column;
+                    background-color:white;
+                    display: flex;          
+                }
+    
+                .navbar-brand {
+                    align-self:flex-start;
+                    height: 20px;
+                    margin-left: 5%;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: gray;
+                    padding: 10px;
+                    &:hover {  
+                    background-color:#DEE2FF;
+                    color: black;
+                    }
+                
+        
+        
+                }
+            }
+    
+        #branding1 {
+            margin-left: 10%;
+        }
+    
+        #branding2 {
+            margin-left: 10%;
+        }
+    
+        #branding3 {
+            margin-left: 10%;
+        }
+
+        @mixin recursos ($width, $height, $aling-self, 
+            $padding, $display,$justify-content, $text-align,
+            $font-size, $font-weight) {
+                width: $width;
+                height: $height;
+                align-self: $aling-self;
+                padding: $padding;
+                display: $display;
+                justify-content: $justify-content;
+                text-align: $text-align;
+                font-size: $font-size;
+                font-weight: $font-weight;
+                }
+
+            #recurso1  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso2  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso3  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+        @mixin portfolios ($width, $height,$padding, 
+            $margin, $background-size, $background-repeat,
+            $background-position, $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;
+                }
+                
+        .portfolio1  {
+                    @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(/imagenes/portfolio1.png);
+                    }
+    
+        .portfolio2 {
+                     @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(imagenes/portfolio2.png);
+                    }
+    
+        .portfolio3 {
+                     @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(imagenes/portfolio3.png);
+                    }
+    
+        #button {
+            margin-top: 20%;
+            margin-left: 40%;
+            background-color: #993bd7;
+        }
+        
+        footer {
+            display: flex;
+            background-color: #634478;
+            color: #DEE2FF;
+            padding: 12px;
+            text-align: center;
+            font-size:small;
+            font-weight:bolder;
+            font-family: "Comfortaa", sans-serif;
+            src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+        }
+}
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+ 
+    #grilla-portfolio {
+       display: grid;
+       grid-template-areas:
+          "header header header header"
+          ". portada1 texto1 ."
+          ". portada2 texto2 ."
+          ". portada3 texto3 ."
+          " footer footer footer footer" ;
+       grid-template-rows: .8fr 8fr 8fr 8fr 0.5fr ;
+       grid-template-columns: 2fr 4fr 6fr 2fr;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 5px;
+       grid-column-gap: 5px;
+       align-items: center ;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    section#branding1 {
+       grid-area: portada1;
+    }
+ 
+    section#recurso1 {
+       grid-area: texto1;
+ 
+    }
+ 
+    section#branding2 {
+       grid-area: portada2;
+    }
+ 
+    section#recurso2 {
+       grid-area: texto2;
+ 
+    }
+ 
+    section#branding3 {
+       grid-area: portada3;
+    }
+ 
+    section#recurso3 {
+       grid-area: texto3;
+ 
+    }
+ 
+    footer {
+       grid-area: footer;
+    }
+       
+    /*Estilos*/
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+
+            .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+
+            a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        }
+ 
+    #branding1 {
+       margin-left: 10%;
+    }
+ 
+    #branding2 {
+       margin-left: 10%;
+    }
+ 
+    #branding3 {
+       margin-left: 10%;
+    }
+
+    @mixin recursos ($width, $height, $aling-self, 
+    $padding, $display,$justify-content, $text-align,
+    $font-size, $font-weight) {
+        width: $width;
+        height: $height;
+        align-self: $aling-self;
+        padding: $padding;
+        display: $display;
+        justify-content: $justify-content;
+        text-align: $text-align;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        }
+
+    #recurso1  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+    #recurso2  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+    #recurso3  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+
+    @mixin portfolios ($width, $height,$padding, 
+    $margin, $background-size, $background-repeat,
+    $background-position, $border-radius) {
+        width: $width;
+        height: $height;
+        padding: $padding;
+        margin: $margin;
+        background-size: $background-size;
+        background-repeat: $background-repeat;
+        background-position: $background-position;
+        border-radius: $border-radius;
+        }
+        
+    .portfolio1  {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(imagenes/portfolio1.png);
+                }
+
+    .portfolio2 {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(imagenes/portfolio2.png);
+                }
+
+    .portfolio3 {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(imagenes/portfolio3.png);
+                }
+ 
+    #button {
+       margin-top: 20%;
+       margin-left: 40%;
+       background-color: #993bd7;
+    }
+     
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    #grilla-portfolio {
+       display: grid;
+       grid-template-areas:
+          "header"
+          "portada1"
+          "texto1"
+          "portada2"
+          "texto2"
+          "portada3"
+          "texto3"
+          " footer" ;
+       grid-template-rows: 2fr 4fr 4fr 4fr 4fr 4fr 4fr 0.5fr;
+       grid-template-columns:auto;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 5px;
+       grid-column-gap: 5px;
+       align-items: center ;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    section#branding1 {
+       grid-area: portada1;
+    }
+ 
+    section#recurso1 {
+       grid-area: texto1;
+ 
+    }
+ 
+    section#branding2 {
+       grid-area: portada2;
+    }
+ 
+    section#recurso2 {
+       grid-area: texto2;
+ 
+    }
+ 
+    section#branding3 {
+       grid-area: portada3;
+    }
+ 
+    section#recurso3 {
+       grid-area: texto3;
+ 
+    }
+ 
+    footer {
+       grid-area: footer;
+    }
+       
+    /*Estilos*/
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+
+            .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+
+            a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        }
+ 
+    #branding1 {
+       margin-top: 10%;
+       justify-content: center;
+       margin-left: 3%;
+    }
+ 
+    #branding2 {
+       justify-content: center;
+       margin-left: 3%;
+    }
+ 
+    #branding3 {
+       justify-content: center;
+       margin-left: 3%;
+    }
+
+    @mixin recursos ($width, $height, $aling-self, 
+            $padding, $display,$justify-content, $text-align,
+            $font-size, $font-weight) {
+                width: $width;
+                height: $height;
+                align-self: $aling-self;
+                padding: $padding;
+                display: $display;
+                justify-content: $justify-content;
+                text-align: $text-align;
+                font-size: $font-size;
+                font-weight: $font-weight;
+                }
+
+            #recurso1  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso2  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso3  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+                margin-bottom: 10%;
+            }
+
+    @mixin portfolios ($width, $height,$padding, 
+            $margin, $background-size, $background-repeat,
+            $background-position, $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;
+                }
+                
+            .portfolio1  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(imagenes/portfolio1.png);
+                            margin-top: 10%;
+                        }
+            
+            .portfolio2  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(imagenes/portfolio2.png);
+                        }
+            .portfolio2  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(imagenes/portfolio3.png);
+                        }
+ 
+    #button {
+       margin-top: 10%;
+       width: 350px;
+       background-color: #993bd7;
+       text-align: center;
+       align-self: center;
+       justify-self: center;
+       
+    }
+     
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+
+ /* ------PORTFOLIO 1------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    .docu1 {
+       background-image: url(./imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height:3000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+ 
+    .docu1 {
+       background-image: url(./imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 2000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ 
+    /* MOBILE */
+ 
+ @media (max-width:479px) {
+    
+    .docu1 {
+       margin-top: 10%;
+       background-image: url(./imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 1000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+
+ /* ------PORTFOLIO 2------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    .docu2 {
+       background-image: url(./imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 20600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+    
+    .docu2 {
+       background-image: url(./imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 10600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    .docu2 {
+       margin-top: 10%;
+       background-image: url(./imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 5600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* ------PORTFOLIO 3------ */
+ 
+ /* DESKTOP */
+ 
+ @media (min-width: 1024px){
+ 
+    .docu3 {
+       background-image: url(./imagenes/docu_portfolio3.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 30600px;;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+    
+    .docu3 {
+       background-image: url(./imagenes/docu_portfolio3.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 20600px;;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    .docu3 {
+       margin-top: 10%;
+       background-image: url(./imagenes/docu_portfolio3.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 10600px;;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+ }
+ 
+ 
+ 
+ 
+ 
