@@ -1,4 +1,3 @@
-/*BLOG*/
 #blogDestacado {
   box-shadow: 5px 8px 12px #0F4572;
 }
@@ -34,6 +33,531 @@
   font-family: sans-serif;
 }
 
+/* ------INDEX------ */
+/* DESKTOP */
+@media (min-width: 1024px) {
+  #grilla-index {
+    display: grid;
+    grid-template-areas: "header header header" "anterior anterior anterior" "banner banner banner" "footer footer footer";
+    grid-template-rows: 0.8fr 8fr 0.5fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 100vh;
+    margin: 0;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside#home {
+    grid-area: anterior;
+  }
+
+  section#banner {
+    grid-area: banner;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-content: center;
+  }
+
+  /* Estilos */
+  nav {
+    display: grid;
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+    font-weight: bolder;
+  }
+  nav .container-fluid {
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    display: flex;
+  }
+  nav .navbar-brand {
+    align-self: flex-start;
+    height: 20px;
+    margin-left: 5%;
+  }
+  nav a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+  }
+  nav a:hover {
+    background-color: #DEE2FF;
+    color: black;
+  }
+
+  .fondo-imagen {
+    background-image: url(imagenes/portada_web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 600px;
+  }
+
+  .text-home {
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 15%;
+  }
+
+  h4 {
+    color: gray;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: #993bd7;
+    letter-spacing: 4px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    text-align: left;
+    line-height: 25px;
+    position: absolute;
+    color: gray;
+  }
+
+  .btn-primary {
+    background-color: #FFFF9E;
+    color: black;
+    outline-color: black;
+  }
+  .btn-primary:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #banner {
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: #F3E3FC;
+    padding-bottom: 5%;
+    padding-top: 2%;
+  }
+
+  .customer-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/customer_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .digital-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/digital_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .employ-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/emply_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #texto-banner {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    color: #048DBE;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  footer {
+    display: flex;
+    background-color: #634478;
+    color: #DEE2FF;
+    padding: 12px;
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+    font-family: "Comfortaa", sans-serif;
+    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+  }
+}
+/* TABLET */
+@media (min-width: 480px) and (max-width: 1023px) {
+  #grilla-index {
+    display: grid;
+    grid-template-areas: "header header header" "anterior anterior anterior" "banner banner banner" "footer footer footer ";
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 3fr 2fr;
+    height: 100vh;
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside#home {
+    grid-area: anterior;
+  }
+
+  section#banner {
+    grid-area: banner;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-content: center;
+  }
+
+  /* Estilos */
+  a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+  }
+
+  .nav-link:hover {
+    color: black;
+  }
+
+  nav {
+    display: grid;
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+    font-weight: bolder;
+    background-color: none;
+  }
+
+  .container-fluid {
+    display: block;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .navbar-brand {
+    align-self: flex-start;
+    height: 20px;
+    margin-left: 5%;
+    background-color: none;
+  }
+
+  .fondo-imagen {
+    background-image: url(imagenes/portada_web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 600px;
+  }
+
+  .text-home {
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 15%;
+  }
+
+  h4 {
+    color: gray;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: #993bd7;
+    letter-spacing: 4px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    text-align: left;
+    line-height: 25px;
+    position: absolute;
+    color: gray;
+  }
+
+  .btn-primary {
+    background-color: #FFFF9E;
+    color: black;
+    outline-color: black;
+  }
+
+  .btn-primary:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #banner {
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: #F3E3FC;
+    padding-bottom: 5%;
+    padding-top: 2%;
+  }
+
+  .customer-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/customer_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .digital-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/digital_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .employ-ex {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    margin: 20px;
+    background-image: url(imagenes/emply_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #texto-banner {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    color: #048DBE;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  footer {
+    display: flex;
+    background-color: #634478;
+    color: #DEE2FF;
+    padding: 12px;
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+    font-family: "Comfortaa", sans-serif;
+    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+  }
+}
+/* MOBILE */
+@media (max-width: 479px) {
+  #grilla-index {
+    display: grid;
+    grid-template-areas: "header" "anterior" "banner" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    height: 100vh;
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside#home {
+    grid-area: anterior;
+  }
+
+  section#banner {
+    grid-area: banner;
+  }
+
+  footer {
+    grid-area: footer;
+    justify-content: center;
+  }
+
+  /* Estilos */
+  a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+  }
+
+  .nav-link:hover {
+    color: black;
+  }
+
+  nav {
+    display: grid;
+    display: flex;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+    font-weight: bolder;
+    background-color: none;
+  }
+
+  .container-fluid {
+    display: block;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .navbar-brand {
+    align-self: flex-start;
+    height: 20px;
+    margin-left: 5%;
+    background-color: none;
+  }
+
+  .fondo-imagen {
+    background-image: url(imagenes/portada_web.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 600px;
+  }
+
+  .text-home {
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 15%;
+  }
+
+  h4 {
+    color: gray;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+  h3 {
+    color: #993bd7;
+    letter-spacing: 4px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    text-align: left;
+    line-height: 25px;
+    position: absolute;
+    color: gray;
+  }
+
+  .btn-primary {
+    background-color: #FFFF9E;
+    color: black;
+    outline-color: black;
+  }
+
+  .btn-primary:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #banner {
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    align-self: center;
+    background-color: #F3E3FC;
+    padding-bottom: 15%;
+    padding-top: 2%;
+  }
+
+  .customer-ex {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    background-image: url(imagenes/customer_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .digital-ex {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    background-image: url(imagenes/digital_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .employ-ex {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    background-image: url(imagenes/emply_ex.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #texto-banner {
+    font-size: 16px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    color: #048DBE;
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  footer {
+    display: flex;
+    background-color: #634478;
+    color: #DEE2FF;
+    padding: 12px;
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+    font-family: "Comfortaa", sans-serif;
+    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+  }
+}
+/* ------BLOG------ */
 /* DESKTOP */
 @media (min-width: 1024px) {
   #grilla {
@@ -655,7 +1179,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(/imagenes/portfolio1.png);
+    background-image: url(../../imagenes/portfolio1.png);
   }
 
   .portfolio2 {
@@ -667,7 +1191,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio2.png);
+    background-image: url(../../imagenes/portfolio2.png);
   }
 
   .portfolio3 {
@@ -679,7 +1203,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio3.png);
+    background-image: url(../../imagenes/portfolio3.png);
   }
 
   #button {
@@ -838,7 +1362,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio1.png);
+    background-image: url(/imagenes/portfolio1.png);
   }
 
   .portfolio2 {
@@ -850,7 +1374,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio2.png);
+    background-image: url(/imagenes/portfolio2.png);
   }
 
   .portfolio3 {
@@ -862,7 +1386,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio3.png);
+    background-image: url(/imagenes/portfolio3.png);
   }
 
   #button {
@@ -1029,7 +1553,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio1.png);
+    background-image: url(/imagenes/portfolio1.png);
     margin-top: 10%;
   }
 
@@ -1042,7 +1566,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio2.png);
+    background-image: url(/imagenes/portfolio2.png);
   }
 
   .portfolio2 {
@@ -1054,7 +1578,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    background-image: url(imagenes/portfolio3.png);
+    background-image: url(/imagenes/portfolio3.png);
   }
 
   #button {
@@ -1082,7 +1606,7 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
   .docu1 {
-    background-image: url(./imagenes/docu_portfolio1.jpg);
+    background-image: url(../../imagenes/docu_portfolio1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1097,7 +1621,7 @@
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
   .docu1 {
-    background-image: url(./imagenes/docu_portfolio1.jpg);
+    background-image: url(../../imagenes/docu_portfolio1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1113,7 +1637,7 @@
 @media (max-width: 479px) {
   .docu1 {
     margin-top: 10%;
-    background-image: url(./imagenes/docu_portfolio1.jpg);
+    background-image: url(../../imagenes/docu_portfolio1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1129,7 +1653,7 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
   .docu2 {
-    background-image: url(./imagenes/docu_portfolio2.jpg);
+    background-image: url(../../imagenes/docu_portfolio2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1144,7 +1668,7 @@
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
   .docu2 {
-    background-image: url(./imagenes/docu_portfolio2.jpg);
+    background-image: url(../../imagenes/docu_portfolio2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1160,7 +1684,7 @@
 @media (max-width: 479px) {
   .docu2 {
     margin-top: 10%;
-    background-image: url(./imagenes/docu_portfolio2.jpg);
+    background-image: url(../../imagenes/docu_portfolio2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1176,7 +1700,7 @@
 /* DESKTOP */
 @media (min-width: 1024px) {
   .docu3 {
-    background-image: url(./imagenes/docu_portfolio3.jpg);
+    background-image: url(../../imagenes/docu_portfolio3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1191,7 +1715,7 @@
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
   .docu3 {
-    background-image: url(./imagenes/docu_portfolio3.jpg);
+    background-image: url(../../imagenes/portfolio3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1207,7 +1731,7 @@
 @media (max-width: 479px) {
   .docu3 {
     margin-top: 10%;
-    background-image: url(./imagenes/docu_portfolio3.jpg);
+    background-image: url(../../imagenes/docu_portfolio3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
