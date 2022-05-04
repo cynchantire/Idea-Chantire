@@ -81,7 +81,7 @@
          } 
  
     .fondo-imagen {
-       background-image: url(imagenes/portada_web.png);
+       background-image: url(../../imagenes/portada_web.png);
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -96,16 +96,18 @@
        
     }
     
-    h4 {      
+    .encabezado {      
        color: gray;
        margin: 0;
-       font-weight: bolder; 
+       font-weight: bolder;
+       font-size:x-large; 
     }
  
-    h3 {      
+    .encabezado1 {      
        color: #993bd7;
-       letter-spacing: 4px;
-       font-weight: bolder;           
+       letter-spacing: 7px;
+       font-weight: bolder;
+       font-size:x-large;           
     }
  
     p  {
@@ -123,7 +125,7 @@
        color: black;
        outline-color: black;
        &:hover { 
-            background-color:black;
+            background-color:#634478;
             color: white;
         }
     }
@@ -138,40 +140,49 @@
        padding-top: 2%;
  
     }
+
+    $estilosbanner: (
+        ancho: 100px,
+        alto: 100px,
+        relleno: 10px,
+        margen: 20px,
+        tamanio: contain,
+        repetir: no-repeat,
+        posicion: centro);
  
     .customer-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/customer_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+       width: map-get($estilosbanner, ancho);
+       height: map-get($estilosbanner, alto);
+       padding-top: map-get($estilosbanner, relleno);
+       margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/customer_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     
     }
  
  
     .digital-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/digital_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/digital_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     }
  
     .employ-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/emply_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/emply_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     }
  
     #texto-banner {
@@ -183,8 +194,6 @@
        text-align: center;
        justify-content: center;
        font-weight: bolder;     
-       
-    
     }
  
     footer {
@@ -239,41 +248,39 @@
  
     /* Estilos */
  
-    a {
-       text-decoration: none;
-       color: gray;
-       padding: 10px;
-    }
- 
-    .nav-link:hover {
-       color: black;
-    }
- 
     nav {
-       display: grid;
-       display: flex;
-       font-family: 'Comfortaa', sans-serif;
-       src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-       font-weight: bolder;
-       background-color: none;
-    }
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
  
-    .container-fluid {
-       display:block;
-       flex-direction: column;
-       display: flex;
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
  
-    }
+             .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
  
-    .navbar-brand {
-       align-self:flex-start;
-       height: 20px;
-       margin-left: 5%;
-       background-color: none;
-    }
+             a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        } 
  
     .fondo-imagen {
-       background-image: url(imagenes/portada_web.png);
+       background-image: url(../../imagenes/portada_web.png);
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -284,20 +291,21 @@
     .text-home {
        display: inline-block;
        margin-left: 7%;
-       margin-top: 15%;      
-       
+       margin-top: 15%;         
     }
     
-    h4 {      
+    .encabezado {      
        color: gray;
        margin: 0;
        font-weight: bolder; 
+       font-size: large;
     }
  
-    h3 {      
+    .encabezado1 {      
        color: #993bd7;
-       letter-spacing: 4px;
-       font-weight: bolder;           
+       letter-spacing: 5px;
+       font-weight: bolder;
+       font-size: large;           
     }
  
     p  {
@@ -311,60 +319,68 @@
     }
  
     .btn-primary {
-       background-color:#FFFF9E;
-       color: black;
-       outline-color: black;
+        background-color:#FFFF9E;
+        color: black;
+        outline-color: black;
+        &:hover { 
+             background-color:#634478;
+             color: white;
+        }
     }
- 
-    .btn-primary:hover {
-       background-color:black;
-       color: white;
-    }
- 
+
     #banner {
        display: flex;
        height: auto;
        justify-content: space-evenly;
        align-self: center;
        background-color:#F3E3FC;
-       padding-bottom: 5%;
+       padding-bottom: 10%;
        padding-top: 2%;
  
     }
+
+    $estilosbanner: (
+        ancho: 100px,
+        alto: 100px,
+        relleno: 10px,
+        margen: 20px,
+        tamanio: contain,
+        repetir: no-repeat,
+        posicion: centro);
  
     .customer-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/customer_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+       width: map-get($estilosbanner, ancho);
+       height: map-get($estilosbanner, alto);
+       padding-top: map-get($estilosbanner, relleno);
+       margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/customer_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     
     }
  
  
     .digital-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/digital_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/digital_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     }
  
     .employ-ex {
-       width: 100px;
-       height: 100px;
-       padding-top: 10px;
-       margin: 20px;
-       background-image: url(imagenes/emply_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/emply_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
     }
  
     #texto-banner {
@@ -375,9 +391,7 @@
        margin-top: 100px;
        text-align: center;
        justify-content: center;
-       font-weight: bolder;     
-       
-    
+       font-weight: bolder;        
     }
  
     footer {
@@ -430,41 +444,39 @@
  
     /* Estilos */
  
-    a {
-       text-decoration: none;
-       color: gray;
-       padding: 10px;
-    }
- 
-    .nav-link:hover {
-       color: black;
-    }
- 
     nav {
-       display: grid;
-       display: flex;
-       font-family: 'Comfortaa', sans-serif;
-       src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-       font-weight: bolder;
-       background-color: none;
-    }
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
  
-    .container-fluid {
-       display:block;
-       flex-direction: column;
-       display: flex;
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
  
-    }
+             .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
  
-    .navbar-brand {
-       align-self:flex-start;
-       height: 20px;
-       margin-left: 5%;
-       background-color: none;
-    }
+             a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        } 
  
     .fondo-imagen {
-       background-image: url(imagenes/portada_web.png);
+       background-image: url(../../imagenes/portada_web.png);
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
@@ -479,16 +491,18 @@
        
     }
     
-    h4 {      
+    .encabezado {      
        color: gray;
        margin: 0;
-       font-weight: bolder; 
+       font-weight: bolder;
+       font-size: 20px; 
     }
  
-    h3 {      
+    .encabezado1 {      
        color: #993bd7;
-       letter-spacing: 4px;
-       font-weight: bolder;           
+       letter-spacing: 6px;
+       font-weight: bolder;
+       font-size: 20px;           
     }
  
     p  {
@@ -502,14 +516,13 @@
     }
  
     .btn-primary {
-       background-color:#FFFF9E;
-       color: black;
-       outline-color: black;
-    }
- 
-    .btn-primary:hover {
-       background-color:black;
-       color: white;
+        background-color:#FFFF9E;
+        color: black;
+        outline-color: black;
+        &:hover { 
+             background-color:#634478;
+             color: white;
+        }
     }
  
     #banner {
@@ -522,38 +535,33 @@
        padding-top: 2%;
  
     }
+
+    @mixin bannermobile {
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
  
     .customer-ex {
-       width: 70px;
-       height: 70px;
-       margin: 20px;
-       background-image: url(imagenes/customer_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
-    
+       @include bannermobile;
+       background-image: url(../../imagenes/customer_ex.png);
+       
     }
  
  
     .digital-ex {
-       width: 70px;
-       height: 70px;
-       margin: 20px;
-       background-image: url(imagenes/digital_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
-    }
+        @include bannermobile;       
+        background-image: url(../../imagenes/digital_ex.png);
+           }
  
     .employ-ex {
-       width: 70px;
-       height: 70px;
-       margin: 20px;
-       background-image: url(imagenes/emply_ex.png);
-       background-size:contain;
-       background-repeat: no-repeat;
-       background-position: center;
-    }
+        @include bannermobile; 
+        background-image: url(../../imagenes/emply_ex.png);
+           }
  
     #texto-banner {
        font-size: 16px;
@@ -564,8 +572,6 @@
        text-align: center;
        justify-content: center;
        font-weight: bolder;     
-       
-    
     }
  
     footer {
@@ -575,7 +581,7 @@
        padding: 12px;
        text-align: center;
        font-size:small;
-       font-weight:bolder;
+       font-weight:900;
        font-family: "Comfortaa", sans-serif;
        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
     }
@@ -1229,6 +1235,11 @@ footer {
             margin-left: 10%;
         }
 
+        .tituloPortfolio {
+            font-size: 30px;        
+            }
+    
+
         @mixin recursos ($width, $height, $aling-self, 
             $padding, $display,$justify-content, $text-align,
             $font-size, $font-weight) {
@@ -1423,6 +1434,10 @@ footer {
         font-weight: $font-weight;
         }
 
+    .tituloPortfolio {
+        font-size: 24px;        
+        }
+
     #recurso1  {
         @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
         font-family: "Comfortaa", sans-serif;
@@ -1457,17 +1472,18 @@ footer {
         
     .portfolio1  {
                 @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
-                    background-image: url(/imagenes/portfolio1.png);
+                    background-image: url(../../imagenes/portfolio1.png);
                 }
 
     .portfolio2 {
                 @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
-                    background-image: url(/imagenes/portfolio2.png);
+                    background-image: url(../../imagenes/portfolio2.png);
                 }
 
     .portfolio3 {
                 @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
-                    background-image: url(/imagenes/portfolio3.png);
+                    background-image: url(../../imagenes/portfolio3.png);
+                    margin-bottom: 10%;
                 }
  
     #button {
@@ -1597,6 +1613,10 @@ footer {
        margin-left: 3%;
     }
 
+    .tituloPortfolio {
+        font-size: 20px;        
+     }
+
     @mixin recursos ($width, $height, $aling-self, 
             $padding, $display,$justify-content, $text-align,
             $font-size, $font-weight) {
@@ -1648,17 +1668,18 @@ footer {
                 
             .portfolio1  {
                         @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
-                            background-image: url(/imagenes/portfolio1.png);
+                            background-image: url(../../imagenes/portfolio1.png);
                             margin-top: 10%;
                         }
             
             .portfolio2  {
                         @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
-                            background-image: url(/imagenes/portfolio2.png);
+                            background-image: url(../../imagenes/portfolio2.png);
                         }
-            .portfolio2  {
+
+            .portfolio3  {
                         @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
-                            background-image: url(/imagenes/portfolio3.png);
+                            background-image: url(../../imagenes/portfolio3.png);
                         }
  
     #button {
@@ -1702,6 +1723,22 @@ footer {
        justify-self: center;
        display: flex;
     }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
  }
  
  /* TABLET */
@@ -1719,6 +1756,21 @@ footer {
        justify-items: center;
        justify-self: center;
        display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
     }
  }
  
@@ -1740,6 +1792,21 @@ footer {
        justify-self: center;
        display: flex;
     }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
  }
 
  /* ------PORTFOLIO 2------ */
@@ -1760,7 +1827,24 @@ footer {
        justify-self: center;
        display: flex;
     }
- }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+
+}
  
  /* TABLET */
  
@@ -1777,6 +1861,21 @@ footer {
        justify-items: center;
        justify-self: center;
        display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
     }
  }
  
@@ -1796,6 +1895,21 @@ footer {
        justify-items: center;
        justify-self: center;
        display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
     }
  }
  
@@ -1817,6 +1931,22 @@ footer {
        justify-self: center;
        display: flex;
     }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
  }
  
  /* TABLET */
@@ -1835,6 +1965,21 @@ footer {
        justify-self: center;
        display: flex;
     }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
  }
  
  /* MOBILE */
@@ -1842,19 +1987,34 @@ footer {
  @media (max-width:479px) {
  
     .docu3 {
-       margin-top: 10%;
-       background-image: url(../../imagenes/docu_portfolio3.jpg);
-       background-repeat: no-repeat;
-       background-position: center;
-       background-size:contain;
-       background-color: none;
-       height: 10600px;;
-       justify-content: center;
-       justify-items: center;
-       justify-self: center;
-       display: flex;
+        margin-top: 10%;
+        background-image: url(../../imagenes/docu_portfolio3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        background-color: none;
+        height: 10600px;;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        display: flex;
     }
- }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
  
  
  
