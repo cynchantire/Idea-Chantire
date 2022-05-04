@@ -1,4 +1,4 @@
-/*BLOG*/
+
 
 @import "sombras";
 
@@ -8,6 +8,589 @@
     box-sizing: border-box;
     font-family: sans-serif;
  }
+
+/* ------INDEX------ */
+
+/* DESKTOP */
+@media (min-width: 1024px){
+
+    #grilla-index {
+       display: grid;
+       grid-template-areas:
+          "header header header"
+          "anterior anterior anterior"
+          "banner banner banner"
+          "footer footer footer";
+       grid-template-rows: .8fr 8fr .5fr ;
+       grid-template-columns: 2fr 2fr 2fr;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 5px;
+       grid-column-gap: 5px;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    aside#home {
+       grid-area: anterior;
+    }
+ 
+    section#banner {
+       grid-area: banner;
+    }
+  
+    footer {
+       grid-area: footer;
+       justify-content: center;
+    }
+ 
+ 
+    /* Estilos */
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+ 
+             .container-fluid {
+                 display:block;
+                 flex-direction: column;
+                 background-color:white;
+                 display: flex;          
+             }
+ 
+             .navbar-brand {
+                 align-self:flex-start;
+                 height: 20px;
+                 margin-left: 5%;
+             }
+ 
+             a {
+                 text-decoration: none;
+                 color: gray;
+                 padding: 10px;
+                 &:hover {  
+                 background-color:#DEE2FF;
+                 color: black;
+                 }
+             }
+         } 
+ 
+    .fondo-imagen {
+       background-image: url(../../imagenes/portada_web.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-color: none;
+       height: 600px;
+    }
+    
+    .text-home {
+       display: inline-block;
+       margin-left: 7%;
+       margin-top: 15%;      
+       
+    }
+    
+    .encabezado {      
+       color: gray;
+       margin: 0;
+       font-weight: bolder;
+       font-size:x-large; 
+    }
+ 
+    .encabezado1 {      
+       color: #993bd7;
+       letter-spacing: 7px;
+       font-weight: bolder;
+       font-size:x-large;           
+    }
+ 
+    p  {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       text-align:left;
+       line-height: 25px;
+       position: absolute;
+       color: gray;            
+    }
+ 
+    .btn-primary {
+       background-color:#FFFF9E;
+       color: black;
+       outline-color: black;
+       &:hover { 
+            background-color:#634478;
+            color: white;
+        }
+    }
+ 
+    #banner {
+       display: flex;
+       height: auto;
+       justify-content: space-evenly;
+       align-self: center;
+       background-color:#F3E3FC;
+       padding-bottom: 5%;
+       padding-top: 2%;
+ 
+    }
+
+    $estilosbanner: (
+        ancho: 100px,
+        alto: 100px,
+        relleno: 10px,
+        margen: 20px,
+        tamanio: contain,
+        repetir: no-repeat,
+        posicion: centro);
+ 
+    .customer-ex {
+       width: map-get($estilosbanner, ancho);
+       height: map-get($estilosbanner, alto);
+       padding-top: map-get($estilosbanner, relleno);
+       margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/customer_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    
+    }
+ 
+ 
+    .digital-ex {
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/digital_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    }
+ 
+    .employ-ex {
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/emply_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    }
+ 
+    #texto-banner {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       color:#048DBE;
+       margin-top: 100px;
+       text-align: center;
+       justify-content: center;
+       font-weight: bolder;     
+    }
+ 
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+ 
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+    #grilla-index {
+       display: grid;
+       grid-template-areas:
+       "header header header"
+       "anterior anterior anterior"
+       "banner banner banner"
+       "footer footer footer ";
+       grid-template-rows: auto;
+       grid-template-columns: 2fr 3fr 2fr;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 10px;
+       grid-column-gap: 10px;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    aside#home {
+       grid-area: anterior;
+    }
+ 
+    section#banner {
+       grid-area: banner;
+    }
+  
+    footer {
+       grid-area: footer;
+       justify-content: center;
+    }
+ 
+ 
+    /* Estilos */
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+ 
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+ 
+             .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+ 
+             a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        } 
+ 
+    .fondo-imagen {
+       background-image: url(../../imagenes/portada_web.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-color: none;
+       height: 600px;
+    }
+    
+    .text-home {
+       display: inline-block;
+       margin-left: 7%;
+       margin-top: 15%;         
+    }
+    
+    .encabezado {      
+       color: gray;
+       margin: 0;
+       font-weight: bolder; 
+       font-size: large;
+    }
+ 
+    .encabezado1 {      
+       color: #993bd7;
+       letter-spacing: 5px;
+       font-weight: bolder;
+       font-size: large;           
+    }
+ 
+    p  {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       text-align:left;
+       line-height: 25px;
+       position: absolute;
+       color: gray;            
+    }
+ 
+    .btn-primary {
+        background-color:#FFFF9E;
+        color: black;
+        outline-color: black;
+        &:hover { 
+             background-color:#634478;
+             color: white;
+        }
+    }
+
+    #banner {
+       display: flex;
+       height: auto;
+       justify-content: space-evenly;
+       align-self: center;
+       background-color:#F3E3FC;
+       padding-bottom: 10%;
+       padding-top: 2%;
+ 
+    }
+
+    $estilosbanner: (
+        ancho: 100px,
+        alto: 100px,
+        relleno: 10px,
+        margen: 20px,
+        tamanio: contain,
+        repetir: no-repeat,
+        posicion: centro);
+ 
+    .customer-ex {
+       width: map-get($estilosbanner, ancho);
+       height: map-get($estilosbanner, alto);
+       padding-top: map-get($estilosbanner, relleno);
+       margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/customer_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    
+    }
+ 
+ 
+    .digital-ex {
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/digital_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    }
+ 
+    .employ-ex {
+        width: map-get($estilosbanner, ancho);
+        height: map-get($estilosbanner, alto);
+        padding-top: map-get($estilosbanner, relleno);
+        margin: map-get($estilosbanner, margen);
+       background-image: url(../../imagenes/emply_ex.png);
+       background-size:map-get($estilosbanner, tamanio);
+       background-repeat: map-get($estilosbanner, repetir);
+       background-position: map-get($estilosbanner, posicion);
+    }
+ 
+    #texto-banner {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       color:#048DBE;
+       margin-top: 100px;
+       text-align: center;
+       justify-content: center;
+       font-weight: bolder;        
+    }
+ 
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+    #grilla-index {
+       display: grid;
+       grid-template-areas:
+          "header"
+          "anterior"
+          "banner"
+          "footer";
+       grid-template-rows: auto;
+       grid-template-columns: auto;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 10px;
+       grid-column-gap: 10px;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    aside#home {
+       grid-area: anterior;
+    }
+ 
+    section#banner {
+       grid-area: banner;
+    }
+  
+    footer {
+       grid-area: footer;
+       justify-content: center;
+    }
+ 
+    /* Estilos */
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+ 
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+ 
+             .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+ 
+             a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        } 
+ 
+    .fondo-imagen {
+       background-image: url(../../imagenes/portada_web.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       background-color: none;
+       height: 600px;
+    }
+    
+    .text-home {
+       display: inline-block;
+       margin-left: 7%;
+       margin-top: 15%;      
+       
+    }
+    
+    .encabezado {      
+       color: gray;
+       margin: 0;
+       font-weight: bolder;
+       font-size: 20px; 
+    }
+ 
+    .encabezado1 {      
+       color: #993bd7;
+       letter-spacing: 6px;
+       font-weight: bolder;
+       font-size: 20px;           
+    }
+ 
+    p  {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       text-align:left;
+       line-height: 25px;
+       position: absolute;
+       color: gray;            
+    }
+ 
+    .btn-primary {
+        background-color:#FFFF9E;
+        color: black;
+        outline-color: black;
+        &:hover { 
+             background-color:#634478;
+             color: white;
+        }
+    }
+ 
+    #banner {
+       display: flex;
+       height: auto;
+       justify-content: space-evenly;
+       align-self: center;
+       background-color:#F3E3FC;
+       padding-bottom: 15%;
+       padding-top: 2%;
+ 
+    }
+
+    @mixin bannermobile {
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+ 
+    .customer-ex {
+       @include bannermobile;
+       background-image: url(../../imagenes/customer_ex.png);
+       
+    }
+ 
+ 
+    .digital-ex {
+        @include bannermobile;       
+        background-image: url(../../imagenes/digital_ex.png);
+           }
+ 
+    .employ-ex {
+        @include bannermobile; 
+        background-image: url(../../imagenes/emply_ex.png);
+           }
+ 
+    #texto-banner {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       color:#048DBE;
+       margin-top: 80px;
+       text-align: center;
+       justify-content: center;
+       font-weight: bolder;     
+    }
+ 
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:900;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+ 
+
+
+
+ /* ------BLOG------ */
 
     /* DESKTOP */
 @media (min-width: 1024px){
@@ -105,43 +688,44 @@
         justify-content: space-evenly;
         margin-top: 50px;
         align-self: center;
-     
+
+        @mixin blogs ($width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+            .blog-secundario1  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2 {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+            
+            .blog-secundario3 {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
             .blog-secundario1 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
-                background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
+            background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
             }
   
-            .blog-secundario2 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
+            .blog-secundario2 {               
                 background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
             }
   
             .blog-secundario3 {
-                width: 300px;
-                height: 250px;
-                padding: 10px;
-                margin: 20px;
-                background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-radius: 20px;
+                background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);   
             }
-    }
+        }
     
     .form  {
             background-color: #DEE2FF;
@@ -283,42 +867,43 @@
        height: auto;
        justify-content: space-evenly;
        margin-top: 50px;
-       align-self: center; 
+       align-self: center;
+
+       @mixin blogs ($width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+            .blog-secundario1  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario3  {
+                @include blogs(300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
 
         .blog-secundario1 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario2 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario3 {
-            width: 300px;
-            height: 250px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
     }
@@ -457,49 +1042,46 @@
        justify-self: center;
        margin-top: 20px;
 
+       @mixin blogsmini ($display, $flex-direction, $flex-wrap, 
+            $width, $height, $padding, 
+            $margin, $background-size,
+            $background-repeat, $background-position,
+            $border-radius) {
+                display: $display;
+                flex-direction: $flex-direction;
+                flex-wrap: $flex-wrap;
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;            
+                }
+
+            .blog-secundario1  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario2  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
+            .blog-secundario3  {
+                @include blogsmini(flex, column, wrap, 300px,250px,10px,20px,cover,no-repeat,center,20px)
+            }
+
         .blog-secundario1 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
   
         .blog-secundario2 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
 
         .blog-secundario3 {
-            display: flex;
-            flex-direction:column;
-            flex-wrap: wrap;
-            width: 300px;
-            height: 200px;
-            padding: 10px;
-            margin: 20px;
             background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
-            background-size:cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 20px;
         }
     }
  
@@ -545,3 +1127,896 @@ footer {
         src: url(/fuentes/Comfortaa/Comfortaa.ttf);       
     }
 }
+
+
+/* ------PORTFOLIO------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    #grilla-portfolio {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          ". portada1 texto1 ."
+          ". portada2 texto2 ."
+          ". portada3 texto3 ."
+          " footer footer footer footer" ;
+        grid-template-rows: .8fr 8fr 8fr 8fr 0.5fr ;
+        grid-template-columns: 2fr 4fr 6fr 2fr;
+        height: 100vh;
+        margin: 0;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        align-items:center;
+    }
+ 
+        header {
+            grid-area: header;
+        }
+    
+        section#branding1 {
+            grid-area: portada1;
+        }
+    
+        section#recurso1 {
+            grid-area: texto1;
+    
+        }
+    
+        section#branding2 {
+            grid-area: portada2;
+        }
+    
+        section#recurso2 {
+            grid-area: texto2;
+    
+        }
+    
+        section#branding3 {
+            grid-area: portada3;
+        }
+    
+        section#recurso3 {
+            grid-area: texto3;
+    
+        }
+    
+        footer {
+            grid-area: footer;
+        }
+       
+    /*Estilos*/
+ 
+        nav {
+            display: grid;
+            display: flex;
+            font-family: 'Comfortaa', sans-serif;
+            src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+            font-weight: bolder;
+    
+                .container-fluid {
+                    display:block;
+                    flex-direction: column;
+                    background-color:white;
+                    display: flex;          
+                }
+    
+                .navbar-brand {
+                    align-self:flex-start;
+                    height: 20px;
+                    margin-left: 5%;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: gray;
+                    padding: 10px;
+                    &:hover {  
+                    background-color:#DEE2FF;
+                    color: black;
+                    }
+                
+        
+        
+                }
+            }
+    
+        #branding1 {
+            margin-left: 10%;
+        }
+    
+        #branding2 {
+            margin-left: 10%;
+        }
+    
+        #branding3 {
+            margin-left: 10%;
+        }
+
+        .tituloPortfolio {
+            font-size: 30px;        
+            }
+    
+
+        @mixin recursos ($width, $height, $aling-self, 
+            $padding, $display,$justify-content, $text-align,
+            $font-size, $font-weight) {
+                width: $width;
+                height: $height;
+                align-self: $aling-self;
+                padding: $padding;
+                display: $display;
+                justify-content: $justify-content;
+                text-align: $text-align;
+                font-size: $font-size;
+                font-weight: $font-weight;
+                }
+
+            #recurso1  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso2  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso3  {
+                @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+        @mixin portfolios ($width, $height,$padding, 
+            $margin, $background-size, $background-repeat,
+            $background-position, $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;
+                }
+                
+        .portfolio1  {
+                    @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio1.png);
+                    }
+    
+        .portfolio2 {
+                     @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio2.png);
+                    }
+    
+        .portfolio3 {
+                     @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio3.png);
+                    }
+    
+        #button {
+            margin-top: 20%;
+            margin-left: 40%;
+            background-color: #993bd7;
+        }
+        
+        footer {
+            display: flex;
+            background-color: #634478;
+            color: #DEE2FF;
+            padding: 12px;
+            text-align: center;
+            font-size:small;
+            font-weight:bolder;
+            font-family: "Comfortaa", sans-serif;
+            src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+        }
+}
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+ 
+    #grilla-portfolio {
+       display: grid;
+       grid-template-areas:
+          "header header header header"
+          ". portada1 texto1 ."
+          ". portada2 texto2 ."
+          ". portada3 texto3 ."
+          " footer footer footer footer" ;
+       grid-template-rows: .8fr 8fr 8fr 8fr 0.5fr ;
+       grid-template-columns: 2fr 4fr 6fr 2fr;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 5px;
+       grid-column-gap: 5px;
+       align-items: center ;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    section#branding1 {
+       grid-area: portada1;
+    }
+ 
+    section#recurso1 {
+       grid-area: texto1;
+ 
+    }
+ 
+    section#branding2 {
+       grid-area: portada2;
+    }
+ 
+    section#recurso2 {
+       grid-area: texto2;
+ 
+    }
+ 
+    section#branding3 {
+       grid-area: portada3;
+    }
+ 
+    section#recurso3 {
+       grid-area: texto3;
+ 
+    }
+ 
+    footer {
+       grid-area: footer;
+    }
+       
+    /*Estilos*/
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+
+            .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+
+            a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        }
+ 
+    #branding1 {
+       margin-left: 10%;
+    }
+ 
+    #branding2 {
+       margin-left: 10%;
+    }
+ 
+    #branding3 {
+       margin-left: 10%;
+    }
+
+    @mixin recursos ($width, $height, $aling-self, 
+    $padding, $display,$justify-content, $text-align,
+    $font-size, $font-weight) {
+        width: $width;
+        height: $height;
+        align-self: $aling-self;
+        padding: $padding;
+        display: $display;
+        justify-content: $justify-content;
+        text-align: $text-align;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        }
+
+    .tituloPortfolio {
+        font-size: 24px;        
+        }
+
+    #recurso1  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+    #recurso2  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+    #recurso3  {
+        @include recursos(600px,400px,flex-start,50px,flex,center,justify,medium,normal);
+        font-family: "Comfortaa", sans-serif;
+        src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+
+
+    @mixin portfolios ($width, $height,$padding, 
+    $margin, $background-size, $background-repeat,
+    $background-position, $border-radius) {
+        width: $width;
+        height: $height;
+        padding: $padding;
+        margin: $margin;
+        background-size: $background-size;
+        background-repeat: $background-repeat;
+        background-position: $background-position;
+        border-radius: $border-radius;
+        }
+        
+    .portfolio1  {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio1.png);
+                }
+
+    .portfolio2 {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio2.png);
+                }
+
+    .portfolio3 {
+                @include portfolios(300px,450px,10px,10px,cover,no-repeat,center,10px);
+                    background-image: url(../../imagenes/portfolio3.png);
+                    margin-bottom: 10%;
+                }
+ 
+    #button {
+       margin-top: 20%;
+       margin-left: 40%;
+       background-color: #993bd7;
+    }
+     
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    #grilla-portfolio {
+       display: grid;
+       grid-template-areas:
+          "header"
+          "portada1"
+          "texto1"
+          "portada2"
+          "texto2"
+          "portada3"
+          "texto3"
+          " footer" ;
+       grid-template-rows: 2fr 4fr 4fr 4fr 4fr 4fr 4fr 0.5fr;
+       grid-template-columns:auto;
+       height: 100vh;
+       margin: 0;
+       grid-row-gap: 5px;
+       grid-column-gap: 5px;
+       align-items: center ;
+    }
+ 
+    header {
+       grid-area: header;
+    }
+ 
+    section#branding1 {
+       grid-area: portada1;
+    }
+ 
+    section#recurso1 {
+       grid-area: texto1;
+ 
+    }
+ 
+    section#branding2 {
+       grid-area: portada2;
+    }
+ 
+    section#recurso2 {
+       grid-area: texto2;
+ 
+    }
+ 
+    section#branding3 {
+       grid-area: portada3;
+    }
+ 
+    section#recurso3 {
+       grid-area: texto3;
+ 
+    }
+ 
+    footer {
+       grid-area: footer;
+    }
+       
+    /*Estilos*/
+ 
+    nav {
+        display: grid;
+        display: flex;
+        font-family: 'Comfortaa', sans-serif;
+        src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+        font-weight: bolder;
+
+            .container-fluid {
+                display:block;
+                flex-direction: column;
+                background-color:white;
+                display: flex;          
+            }
+
+            .navbar-brand {
+                align-self:flex-start;
+                height: 20px;
+                margin-left: 5%;
+            }
+
+            a {
+                text-decoration: none;
+                color: gray;
+                padding: 10px;
+                &:hover {  
+                background-color:#DEE2FF;
+                color: black;
+                }
+            }
+        }
+ 
+    #branding1 {
+       margin-top: 10%;
+       justify-content: center;
+       margin-left: 3%;
+    }
+ 
+    #branding2 {
+       justify-content: center;
+       margin-left: 3%;
+    }
+ 
+    #branding3 {
+       justify-content: center;
+       margin-left: 3%;
+    }
+
+    .tituloPortfolio {
+        font-size: 20px;        
+     }
+
+    @mixin recursos ($width, $height, $aling-self, 
+            $padding, $display,$justify-content, $text-align,
+            $font-size, $font-weight) {
+                width: $width;
+                height: $height;
+                align-self: $aling-self;
+                padding: $padding;
+                display: $display;
+                justify-content: $justify-content;
+                text-align: $text-align;
+                font-size: $font-size;
+                font-weight: $font-weight;
+                }
+
+            #recurso1  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso2  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+            }
+
+            #recurso3  {
+                @include recursos(370px,250px,flex-start,10px,flex,center,justify,small,normal);
+                margin: 5%;  
+                font-family: "Comfortaa", sans-serif;
+                src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+                margin-bottom: 10%;
+            }
+
+    @mixin portfolios ($width, $height,$padding, 
+            $margin, $background-size, $background-repeat,
+            $background-position, $border-radius) {
+                width: $width;
+                height: $height;
+                padding: $padding;
+                margin: $margin;
+                background-size: $background-size;
+                background-repeat: $background-repeat;
+                background-position: $background-position;
+                border-radius: $border-radius;
+                }
+                
+            .portfolio1  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(../../imagenes/portfolio1.png);
+                            margin-top: 10%;
+                        }
+            
+            .portfolio2  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(../../imagenes/portfolio2.png);
+                        }
+
+            .portfolio3  {
+                        @include portfolios(350px,230px,10px,10px,cover,no-repeat,center,10px);
+                            background-image: url(../../imagenes/portfolio3.png);
+                        }
+ 
+    #button {
+       margin-top: 10%;
+       width: 350px;
+       background-color: #993bd7;
+       text-align: center;
+       align-self: center;
+       justify-self: center;
+       
+    }
+     
+    footer {
+       display: flex;
+       background-color: #634478;
+       color: #DEE2FF;
+       padding: 12px;
+       text-align: center;
+       font-size:small;
+       font-weight:bolder;
+       font-family: "Comfortaa", sans-serif;
+       src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    }
+ }
+
+ /* ------PORTFOLIO 1------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    .docu1 {
+       background-image: url(../../imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height:3000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+ }
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+ 
+    .docu1 {
+       background-image: url(../../imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 2000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+ }
+ 
+ 
+    /* MOBILE */
+ 
+ @media (max-width:479px) {
+    
+    .docu1 {
+       margin-top: 10%;
+       background-image: url(../../imagenes/docu_portfolio1.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 1000px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+ }
+
+ /* ------PORTFOLIO 2------ */
+
+/* DESKTOP */
+
+@media (min-width: 1024px){
+
+    .docu2 {
+       background-image: url(../../imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 20600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+
+}
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+    
+    .docu2 {
+       background-image: url(../../imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 10600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    .docu2 {
+       margin-top: 10%;
+       background-image: url(../../imagenes/docu_portfolio2.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 5600px;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+ }
+ 
+ /* ------PORTFOLIO 3------ */
+ 
+ /* DESKTOP */
+ 
+ @media (min-width: 1024px){
+ 
+    .docu3 {
+       background-image: url(../../imagenes/docu_portfolio3.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 30600px;;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 36px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 30px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+ }
+ 
+ /* TABLET */
+ 
+ @media (min-width: 480px) and (max-width:1023px) {
+    
+    .docu3 {
+       background-image: url(../../imagenes/portfolio3.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size:contain;
+       background-color: none;
+       height: 20600px;;
+       justify-content: center;
+       justify-items: center;
+       justify-self: center;
+       display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 30px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 24px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+ }
+ 
+ /* MOBILE */
+ 
+ @media (max-width:479px) {
+ 
+    .docu3 {
+        margin-top: 10%;
+        background-image: url(../../imagenes/docu_portfolio3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        background-color: none;
+        height: 10600px;;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        display: flex;
+    }
+
+    .tituloportfolio1 {
+        font-size: 26px;
+        color: #634478;
+        padding-top: 5%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .tituloportfolio2 {
+        font-size: 20px;
+        color:#993bd7;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+ 
+ 
+ 
+ 
+ 
