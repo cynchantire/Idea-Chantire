@@ -2015,6 +2015,210 @@ footer {
         text-align: center;
     }
 }
+
+/* ------ACERCA DE MI------ */
+
+    /* DESKTOP */
+    @media (min-width: 1024px){
+
+        #grilla-aboutme {
+            display: grid;
+            grid-template-areas:
+              "header header header header header"
+              "foto foto texto1 texto1 ."
+              ". logros texto2 texto2 ."
+              ". . skills texto3 ."
+              "hobbies  hobbies hobbies hobbies hobbies"
+              "footer footer footer footer footer";
+            grid-template-rows: .8fr 4fr 4fr 4fr 0.5fr ;
+            grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+            height: 100vh;
+            margin: 0;
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+    
+                header {
+                    grid-area: header;
+                }
+            
+                .caja1 {
+                    grid-area: foto;
+                }
+            
+                .caja2 {
+                    grid-area: logros;
+                }
+
+                #cajat1 {
+                    grid-area: texto1;
+                }
+
+                #cajat2 {
+                    grid-area: texto2;
+                }
+
+                #cajat3 {
+                    grid-area: texto3;
+                }
+            
+                .caja3 {
+                    grid-area: skills;
+                }
+
+                .caja4 {
+                    grid-area: like;
+                }
+
+                #cajat4 {
+                    grid-area: texto4;
+                }
+            
+
+                #hobbies {
+                    grid-area: hobbies;
+                }
+            
+                footer {
+                    grid-area: footer;
+                }
+        }
+
+        .caja1{
+            display: grid;
+            height: 600px;
+            background-image: url(../../imagenes/About_me.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position:center;
+            justify-content: right;
+        }
+
+        .tituloSaludo {
+            font-size: 32px;
+            color: #993bd7;
+            font-weight: bolder;
+        }
+
+        .subtitulo {
+            font-size: 24px;
+            color:#048DBE;
+            font-weight: bolder;
+        }
+
+        #cajat1 {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            padding-top: 15%;
+            justify-content:start;
+            background-position:right;
+        }
+
+        .parrafoUno {
+            font-size: 16px;
+            margin-top: 1%;
+
+        }
+
+        .caja2{
+            display: grid;
+            height: 150px;
+            margin:0;
+            background-image: url(../../imagenes/logros.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position:right;
+        }
+
+        #cajat2 {
+            display: grid;
+            height: 150px;
+            justify-content:start;
+            
+        }
+
+        .caja3{
+            display: grid;
+            height: 300px;
+            width: 300px;
+            background-image: url(../../imagenes/skills.png);
+            background-size: 130%;
+            background-repeat: no-repeat;
+            background-position: left;
+            justify-content: flex-end;
+        }
+
+        #cajat3 {
+            display: grid;
+            padding-top: 5%;
+            height: 200px;
+            width: 300px;
+            justify-content:left;
+        }
+
+        #hobbies {
+            display: flex;
+            height: auto;
+            justify-content: space-evenly;
+            align-self: center;
+            padding-bottom: 5%;
+            padding-top: 2%;
+      
+         }
+ 
+        .astrology {
+            width: 100px;
+            height: 100px;
+            padding-top: 10px;
+            margin: 20px;
+            background-image: url(../../imagenes/astrologia.png);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: contain;
+        
+        }
+ 
+ 
+    .hand-made {
+            width: 100px;
+            height: 100px;
+            padding-top: 10px;
+            margin: 20px;
+            background-image: url(../../imagenes/art.png);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: contain;
+        }
+ 
+    .meditation {
+        width: 100px;
+            height: 100px;
+            padding-top: 10px;
+            margin: 20px;
+            background-image: url(../../imagenes/meditacion.png);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: contain;
+           
+    }
+ 
+    #texto-banner {
+       font-size: 16px;
+       font-family: 'Comfortaa', sans-serif;
+       src: url(fuentes/Comfortaa/Comfortaa.ttf);
+       color:#048DBE;
+       margin-top: 100px;
+       text-align: center;
+       justify-content: center;
+       font-weight: bolder;     
+    }
+
+}
+
+ 
+    
+
+    
  
  
  
