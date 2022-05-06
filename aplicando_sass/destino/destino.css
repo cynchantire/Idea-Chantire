@@ -33,6 +33,51 @@
   font-family: sans-serif;
 }
 
+/*Estilos*/
+nav {
+  display: grid;
+  display: flex;
+  font-family: "Comfortaa", sans-serif;
+  src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
+  font-weight: bolder;
+}
+nav .container-fluid {
+  display: block;
+  flex-direction: column;
+  background-color: white;
+  display: flex;
+}
+nav .navbar-brand {
+  align-self: flex-start;
+  height: 20px;
+  margin-left: 5%;
+}
+nav .navbar-brand:hover {
+  transform: scale(1.5);
+  background-color: none;
+}
+nav a {
+  text-decoration: none;
+  color: gray;
+  padding: 10px;
+}
+nav a:hover {
+  background-color: #DEE2FF;
+  color: black;
+}
+
+footer {
+  display: flex;
+  background-color: #634478;
+  color: #DEE2FF;
+  padding: 12px;
+  text-align: center;
+  font-size: small;
+  font-weight: bolder;
+  font-family: "Comfortaa", sans-serif;
+  src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+}
+
 /* ------INDEX------ */
 /* DESKTOP */
 @media (min-width: 1024px) {
@@ -62,35 +107,6 @@
   footer {
     grid-area: footer;
     justify-content: center;
-  }
-
-  /* Estilos */
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
   }
 
   .fondo-imagen {
@@ -195,18 +211,6 @@
     justify-content: center;
     font-weight: bolder;
   }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -236,35 +240,6 @@
   footer {
     grid-area: footer;
     justify-content: center;
-  }
-
-  /* Estilos */
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
   }
 
   .fondo-imagen {
@@ -369,18 +344,6 @@
     justify-content: center;
     font-weight: bolder;
   }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-  }
 }
 /* MOBILE */
 @media (max-width: 479px) {
@@ -410,35 +373,6 @@
   footer {
     grid-area: footer;
     justify-content: center;
-  }
-
-  /* Estilos */
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
   }
 
   .fondo-imagen {
@@ -540,18 +474,6 @@
     justify-content: center;
     font-weight: bolder;
   }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: 900;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-  }
 }
 /* ------BLOG------ */
 /* DESKTOP */
@@ -586,34 +508,6 @@
   }
 
   /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
-  }
-
   .blogPpal {
     display: grid;
     color: black;
@@ -626,6 +520,10 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+  }
+  .blogPpal:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   section {
@@ -668,11 +566,23 @@
   section .blog-secundario1 {
     background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
   }
+  section .blog-secundario1:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section .blog-secundario2 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
   }
+  section .blog-secundario2:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section .blog-secundario3 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+  }
+  section .blog-secundario3:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   .form {
@@ -745,34 +655,6 @@
   }
 
   /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
-  }
-
   .blogPpal {
     display: grid;
     color: black;
@@ -785,6 +667,10 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+  }
+  .blogPpal:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   section {
@@ -827,11 +713,23 @@
   section .blog-secundario1 {
     background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
   }
+  section .blog-secundario1:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section .blog-secundario2 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
   }
+  section .blog-secundario2:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section .blog-secundario3 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+  }
+  section .blog-secundario3:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   .form {
@@ -905,23 +803,6 @@
   }
 
   /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-    padding: 40px;
-    height: 40px;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-
   section#blogDestacado {
     display: flex;
     height: 300px;
@@ -940,6 +821,10 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+  }
+  .blogPpal:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   section#blogAnterior {
@@ -991,11 +876,23 @@
   section#blogAnterior .blog-secundario1 {
     background-image: url(https://www.caad-design.com/wp-content/uploads/2020/03/customer-journey-featured-image-20200310-caad-retail-design-barcelona.jpg.jpg);
   }
+  section#blogAnterior .blog-secundario1:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section#blogAnterior .blog-secundario2 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
   }
+  section#blogAnterior .blog-secundario2:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
   section#blogAnterior .blog-secundario3 {
     background-image: url(https://www.questionpro.com/blog/wp-content/uploads/2020/08/Infografia2-customer-service-ideal.jpg);
+  }
+  section#blogAnterior .blog-secundario3:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 
   .form {
@@ -1022,18 +919,6 @@
   div .btn-primary hover {
     background-color: black;
     color: white;
-  }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
   }
 }
 /* ------PORTFOLIO------ */
@@ -1083,35 +968,6 @@
     grid-area: footer;
   }
 
-  /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
-  }
-
   #branding1 {
     margin-left: 10%;
   }
@@ -1210,18 +1066,6 @@
     margin-top: 20%;
     margin-left: 40%;
     background-color: #993bd7;
-  }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
   }
 }
 /* TABLET */
@@ -1270,35 +1114,6 @@
     grid-area: footer;
   }
 
-  /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
-  }
-
   #branding1 {
     margin-left: 10%;
   }
@@ -1399,18 +1214,6 @@
     margin-left: 40%;
     background-color: #993bd7;
   }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-  }
 }
 /* MOBILE */
 @media (max-width: 479px) {
@@ -1456,35 +1259,6 @@
 
   footer {
     grid-area: footer;
-  }
-
-  /*Estilos*/
-  nav {
-    display: grid;
-    display: flex;
-    font-family: "Comfortaa", sans-serif;
-    src: url(fuentes/Comfortaa/static/Comfortaa-Bold.ttf);
-    font-weight: bolder;
-  }
-  nav .container-fluid {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    display: flex;
-  }
-  nav .navbar-brand {
-    align-self: flex-start;
-    height: 20px;
-    margin-left: 5%;
-  }
-  nav a {
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-  }
-  nav a:hover {
-    background-color: #DEE2FF;
-    color: black;
   }
 
   #branding1 {
@@ -1598,18 +1372,6 @@
     align-self: center;
     justify-self: center;
   }
-
-  footer {
-    display: flex;
-    background-color: #634478;
-    color: #DEE2FF;
-    padding: 12px;
-    text-align: center;
-    font-size: small;
-    font-weight: bolder;
-    font-family: "Comfortaa", sans-serif;
-    src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-  }
 }
 /* ------PORTFOLIO 1------ */
 /* DESKTOP */
@@ -1641,6 +1403,17 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -1670,6 +1443,17 @@
     color: #993bd7;
     font-weight: bolder;
     text-align: center;
+  }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
   }
 }
 /* MOBILE */
@@ -1702,6 +1486,17 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* ------PORTFOLIO 2------ */
 /* DESKTOP */
@@ -1733,6 +1528,17 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -1762,6 +1568,17 @@
     color: #993bd7;
     font-weight: bolder;
     text-align: center;
+  }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
   }
 }
 /* MOBILE */
@@ -1794,6 +1611,17 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* ------PORTFOLIO 3------ */
 /* DESKTOP */
@@ -1825,6 +1653,17 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -1854,6 +1693,17 @@
     color: #993bd7;
     font-weight: bolder;
     text-align: center;
+  }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
   }
 }
 /* MOBILE */
@@ -1886,18 +1736,185 @@
     font-weight: bolder;
     text-align: center;
   }
+
+  #button1 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 200px;
+    background-color: #993bd7;
+    text-align: center;
+    align-content: space-between;
+  }
 }
 /* ------ACERCA DE MI------ */
 /* DESKTOP */
 @media (min-width: 1024px) {
   #grilla-aboutme {
     display: grid;
-    grid-template-areas: "header header header header header" "foto foto texto1 texto1 ." ". logros texto2 texto2 ." ". . skills texto3 ." "hobbies  hobbies hobbies hobbies hobbies" "footer footer footer footer footer";
+    grid-template-areas: "header header header header header" ". presentacion presentacion presentacion ." ". hobbies hobbies hobbies ." "logros logros logros skills skills" "footer footer footer footer footer";
     grid-template-rows: 0.8fr 4fr 4fr 4fr 0.5fr;
     grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
-    height: 100vh;
+    height: auto;
     margin: 0;
-    grid-row-gap: 5px;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+  }
+  #grilla-aboutme header {
+    grid-area: header;
+  }
+  #grilla-aboutme #aboutme {
+    grid-area: presentacion;
+  }
+  #grilla-aboutme .caja1 {
+    grid-area: foto;
+  }
+  #grilla-aboutme .cajat1 {
+    grid-area: texto;
+  }
+  #grilla-aboutme div#skills {
+    grid-area: skills;
+  }
+  #grilla-aboutme #hobbies {
+    grid-area: hobbies;
+  }
+  #grilla-aboutme div#logros {
+    grid-area: logros;
+  }
+  #grilla-aboutme footer {
+    grid-area: footer;
+  }
+
+  .caja1 {
+    display: grid;
+    width: 500px;
+    background-image: url(../../imagenes/About_me.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .tituloSaludo {
+    font-size: 30px;
+    color: #993bd7;
+    font-weight: bolder;
+  }
+
+  .subtitulo {
+    font-size: 24px;
+    color: #048DBE;
+    font-weight: bolder;
+    flex-direction: row;
+  }
+
+  #cajat1 {
+    display: grid;
+    width: 500px;
+    height: 400px;
+    justify-content: start;
+    background-position: right;
+    padding: 5%;
+    justify-content: left;
+  }
+
+  .parrafoUno {
+    font-size: 16px;
+    margin-top: 4%;
+    font-weight: normal;
+  }
+
+  #aboutme {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    padding-bottom: 1%;
+  }
+
+  #logros {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+  }
+  #logros .caja2 {
+    display: grid;
+    height: 150px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+    justify-content: left;
+  }
+  #skills .caja3 {
+    display: grid;
+    height: 150px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #hobbies {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+  }
+  #hobbies .astrology {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/astrology2-04-04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #hobbies .hand-made {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/arte2-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #hobbies .viajar {
+    display: flex;
+    background-image: url(../../imagenes/viaje-02-02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+
+  .texto-banner {
+    font-size: 16px;
+    width: 200px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    margin-top: 160px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+/* TABLET */
+@media (min-width: 480px) and (max-width: 1023px) {
+  #grilla-aboutme {
+    display: grid;
+    grid-template-areas: "header header header" "foto foto foto" "texto1 texto1 texto1" "hobbies hobbies hobbies" "logros logros logros" "skills skills skills" "footer footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 4fr 4fr;
+    height: auto;
+    margin: 0;
+    grid-row-gap: 10px;
     grid-column-gap: 5px;
   }
   #grilla-aboutme header {
@@ -1906,42 +1923,31 @@
   #grilla-aboutme .caja1 {
     grid-area: foto;
   }
-  #grilla-aboutme .caja2 {
-    grid-area: logros;
-  }
   #grilla-aboutme #cajat1 {
     grid-area: texto1;
+    display: flex;
   }
-  #grilla-aboutme #cajat2 {
-    grid-area: texto2;
-  }
-  #grilla-aboutme #cajat3 {
-    grid-area: texto3;
-  }
-  #grilla-aboutme .caja3 {
+  #grilla-aboutme div#skills {
     grid-area: skills;
-  }
-  #grilla-aboutme .caja4 {
-    grid-area: like;
-  }
-  #grilla-aboutme #cajat4 {
-    grid-area: texto4;
   }
   #grilla-aboutme #hobbies {
     grid-area: hobbies;
+  }
+  #grilla-aboutme div#logros {
+    grid-area: logros;
   }
   #grilla-aboutme footer {
     grid-area: footer;
   }
 
   .caja1 {
-    display: grid;
-    height: 600px;
+    display: flex;
+    height: 400px;
     background-image: url(../../imagenes/About_me.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: right;
+    justify-content: center;
   }
 
   .tituloSaludo {
@@ -1954,108 +1960,252 @@
     font-size: 24px;
     color: #048DBE;
     font-weight: bolder;
+    flex-direction: row;
   }
 
   #cajat1 {
     display: grid;
-    width: 500px;
-    height: 400px;
-    padding-top: 15%;
-    justify-content: start;
-    background-position: right;
+    width: 300px;
+    padding-top: 1%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    background-position: center;
   }
 
   .parrafoUno {
     font-size: 16px;
-    margin-top: 1%;
+    margin-top: 4%;
+    font-weight: normal;
   }
 
-  .caja2 {
+  #aboutme {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    padding-bottom: 20%;
+  }
+
+  #logros {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+  }
+  #logros .caja2 {
     display: grid;
     height: 150px;
     margin: 0;
-    background-image: url(../../imagenes/logros.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
   }
 
-  #cajat2 {
+  #skills {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    justify-content: center;
+  }
+  #skills .caja3 {
     display: grid;
     height: 150px;
-    justify-content: start;
-  }
-
-  .caja3 {
-    display: grid;
-    height: 300px;
-    width: 300px;
-    background-image: url(../../imagenes/skills.png);
-    background-size: 130%;
+    margin: 0;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    justify-content: flex-end;
-  }
-
-  #cajat3 {
-    display: grid;
-    padding-top: 5%;
-    height: 200px;
-    width: 300px;
-    justify-content: left;
+    background-position: center;
   }
 
   #hobbies {
     display: flex;
-    height: auto;
+    align-content: center;
     justify-content: space-evenly;
-    align-self: center;
     padding-bottom: 5%;
-    padding-top: 2%;
   }
-
-  .astrology {
-    width: 100px;
-    height: 100px;
-    padding-top: 10px;
-    margin: 20px;
-    background-image: url(../../imagenes/astrologia.png);
+  #hobbies .astrology {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/astrology2-04-04.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
-
-  .hand-made {
-    width: 100px;
-    height: 100px;
-    padding-top: 10px;
-    margin: 20px;
-    background-image: url(../../imagenes/art.png);
+  #hobbies .hand-made {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/arte2-03.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
-
-  .meditation {
-    width: 100px;
-    height: 100px;
-    padding-top: 10px;
-    margin: 20px;
-    background-image: url(../../imagenes/meditacion.png);
+  #hobbies .viajar {
+    display: flex;
+    background-image: url(../../imagenes/viaje-02-02.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    width: 150px;
+    height: 150px;
   }
 
-  #texto-banner {
+  .texto-banner {
     font-size: 16px;
+    width: 200px;
     font-family: "Comfortaa", sans-serif;
     src: url(fuentes/Comfortaa/Comfortaa.ttf);
-    color: #048DBE;
-    margin-top: 100px;
+    margin-top: 160px;
     text-align: center;
     justify-content: center;
+  }
+}
+/* MOBILE */
+@media (max-width: 479px) {
+  #grilla-aboutme {
+    display: grid;
+    grid-template-areas: "header" "foto" "texto1" "hobbies" "logros" "skills" "footer";
+    grid-template-rows: 0.8fr 4fr 4fr 2fr 2fr 2fr 0.5fr;
+    grid-template-columns: auto;
+    height: auto;
+    margin: 0;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+  }
+  #grilla-aboutme header {
+    grid-area: header;
+  }
+  #grilla-aboutme .caja1 {
+    grid-area: foto;
+  }
+  #grilla-aboutme #cajat1 {
+    grid-area: texto1;
+    display: flex;
+  }
+  #grilla-aboutme #skills {
+    grid-area: skills;
+  }
+  #grilla-aboutme #hobbies {
+    grid-area: hobbies;
+  }
+  #grilla-aboutme #logros {
+    grid-area: logros;
+  }
+  #grilla-aboutme footer {
+    grid-area: footer;
+  }
+
+  .caja1 {
+    display: flex;
+    height: 400px;
+    background-image: url(../../imagenes/About_me.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+  }
+
+  .tituloSaludo {
+    font-size: 24px;
+    color: #993bd7;
     font-weight: bolder;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+    color: #048DBE;
+    font-weight: bolder;
+    flex-direction: row;
+  }
+
+  #cajat1 {
+    display: grid;
+    width: 300px;
+    padding-top: 1%;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    background-position: center;
+  }
+
+  .parrafoUno {
+    font-size: 16px;
+    margin-top: 10%;
+    font-weight: normal;
+  }
+
+  #logros {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+    margin: 30px;
+  }
+  #logros .caja2 {
+    display: grid;
+    height: 150px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+    justify-content: center;
+  }
+  #skills .caja3 {
+    display: flex;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #hobbies {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #hobbies .astrology {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/astrology2-04-04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #hobbies .hand-made {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../imagenes/arte2-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  #hobbies .viajar {
+    display: flex;
+    background-image: url(../../imagenes/viaje-02-02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
+
+  .texto-banner {
+    font-size: 16px;
+    width: 100px;
+    font-family: "Comfortaa", sans-serif;
+    src: url(fuentes/Comfortaa/Comfortaa.ttf);
+    margin-top: 140px;
+    text-align: center;
+    justify-content: space-between;
   }
 }
 
