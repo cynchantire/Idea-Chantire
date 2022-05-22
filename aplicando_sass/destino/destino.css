@@ -15,15 +15,15 @@
 }
 
 .portfolio1 {
-  box-shadow: 5px 8px 12px #0F4572;
+  box-shadow: 5px 8px 12px #F6B1C7;
 }
 
 .portfolio2 {
-  box-shadow: 5px 8px 12px #0F4572;
+  box-shadow: 5px 8px 12px #FFEF7E;
 }
 
 .portfolio3 {
-  box-shadow: 5px 8px 12px #0F4572;
+  box-shadow: 5px 8px 12px #D492DE;
 }
 
 * {
@@ -532,6 +532,7 @@ footer {
     justify-content: space-evenly;
     margin-top: 50px;
     align-self: center;
+    padding-bottom: 20px;
   }
   section .blog-secundario1 {
     width: 300px;
@@ -591,15 +592,15 @@ footer {
     font-size: small;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-    padding: 1%;
-    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 20px;
   }
 
   div .mb-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.1%;
+    margin-top: 12px;
   }
   div .btn-primary {
     background-color: #FFFF9E;
@@ -607,7 +608,7 @@ footer {
     outline-color: black;
   }
   div .btn-primary:hover {
-    background-color: black;
+    background-color: #634478;
     color: white;
   }
 
@@ -679,6 +680,7 @@ footer {
     justify-content: space-evenly;
     margin-top: 50px;
     align-self: center;
+    padding-bottom: 20px;
   }
   section .blog-secundario1 {
     width: 300px;
@@ -738,15 +740,15 @@ footer {
     font-size: small;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-    padding: 1%;
-    margin: 0;
+    margin-top: 12px;
+    padding-bottom: 20px;
   }
 
   section .mb-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.1%;
+    margin-top: 12px;
   }
   section .btn-primary {
     background-color: #FFFF9E;
@@ -754,7 +756,7 @@ footer {
     outline-color: black;
   }
   section .btn-primary:hover {
-    background-color: black;
+    background-color: #634478;
     color: white;
   }
 
@@ -833,6 +835,7 @@ footer {
     flex-wrap: wrap;
     justify-self: center;
     margin-top: 20px;
+    padding-bottom: 20px;
   }
   section#blogAnterior .blog-secundario1 {
     display: flex;
@@ -899,25 +902,26 @@ footer {
     display: flex;
     background-color: #DEE2FF;
     text-align: center;
-    font-size: smaller;
+    font-size: small;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-    padding: 1%;
+    margin-top: 12px;
+    padding-bottom: 20px;
   }
 
   div .mb-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.1%;
+    margin-top: 12px;
   }
   div .btn-primary {
     background-color: #FFFF9E;
     color: black;
     outline-color: black;
   }
-  div .btn-primary hover {
-    background-color: black;
+  div .btn-primary:hover {
+    background-color: #634478;
     color: white;
   }
 }
@@ -982,6 +986,8 @@ footer {
 
   .tituloPortfolio {
     font-size: 30px;
+    font-family: "Lora", serif;
+    src: url(../../fuentes/Lora/static/Lora-Bold.ttf);
   }
 
   #recurso1 {
@@ -1067,6 +1073,10 @@ footer {
     margin-left: 40%;
     background-color: #993bd7;
   }
+  #button:hover {
+    color: white;
+    transform: scale(1.1);
+  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
@@ -1128,6 +1138,8 @@ footer {
 
   .tituloPortfolio {
     font-size: 24px;
+    font-family: "Lora", serif;
+    src: url(../../fuentes/Lora/static/Lora-Bold.ttf);
   }
 
   #recurso1 {
@@ -1213,6 +1225,10 @@ footer {
     margin-top: 20%;
     margin-left: 40%;
     background-color: #993bd7;
+  }
+  #button:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* MOBILE */
@@ -1279,6 +1295,8 @@ footer {
 
   .tituloPortfolio {
     font-size: 20px;
+    font-family: "Lora", serif;
+    src: url(../../fuentes/Lora/static/Lora-Bold.ttf);
   }
 
   #recurso1 {
@@ -1294,6 +1312,7 @@ footer {
     margin: 5%;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    margin-bottom: 80px;
   }
 
   #recurso2 {
@@ -1309,6 +1328,7 @@ footer {
     margin: 5%;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
+    margin-bottom: 80px;
   }
 
   #recurso3 {
@@ -1324,7 +1344,7 @@ footer {
     margin: 5%;
     font-family: "Comfortaa", sans-serif;
     src: url(/fuentes/Comfortaa/Comfortaa.ttf);
-    margin-bottom: 10%;
+    margin-bottom: 80px;
   }
 
   .portfolio1 {
@@ -1365,12 +1385,13 @@ footer {
   }
 
   #button {
-    margin-top: 10%;
-    width: 350px;
+    margin-top: 20%;
+    margin-left: 40%;
     background-color: #993bd7;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
+  }
+  #button:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* ------PORTFOLIO 1------ */
@@ -1404,6 +1425,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1413,6 +1440,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* TABLET */
@@ -1445,6 +1476,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1454,6 +1491,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* MOBILE */
@@ -1487,6 +1528,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1496,6 +1543,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* ------PORTFOLIO 2------ */
@@ -1529,6 +1580,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1538,6 +1595,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* TABLET */
@@ -1570,6 +1631,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1579,6 +1646,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* MOBILE */
@@ -1612,6 +1683,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1621,6 +1698,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* ------PORTFOLIO 3------ */
@@ -1654,6 +1735,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1663,6 +1750,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* TABLET */
@@ -1695,6 +1786,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1704,6 +1801,10 @@ footer {
     background-color: #993bd7;
     text-align: center;
     align-content: space-between;
+  }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
   }
 }
 /* MOBILE */
@@ -1737,6 +1838,12 @@ footer {
     text-align: center;
   }
 
+  .boton-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   #button1 {
     display: block;
     flex-direction: row;
@@ -1747,6 +1854,10 @@ footer {
     text-align: center;
     align-content: space-between;
   }
+  #button1:hover {
+    color: white;
+    transform: scale(1.1);
+  }
 }
 /* ------ACERCA DE MI------ */
 /* DESKTOP */
@@ -1754,9 +1865,8 @@ footer {
   #grilla-aboutme {
     display: grid;
     grid-template-areas: "header header header header header" ". presentacion presentacion presentacion ." ". hobbies hobbies hobbies ." "logros logros logros skills skills" "footer footer footer footer footer";
-    grid-template-rows: 0.8fr 4fr 4fr 4fr 0.5fr;
-    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
-    height: auto;
+    grid-template-rows: 0.8fr 4fr 2fr 2fr 0.1fr;
+    grid-template-columns: 2fr 4fr 4fr 4fr 4fr;
     margin: 0;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -1788,19 +1898,20 @@ footer {
 
   .caja1 {
     display: grid;
-    width: 500px;
+    width: 600px;
     background-image: url(../../imagenes/About_me.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: space-between;
-    margin: 20px;
+    margin-left: 20px;
   }
 
   .tituloSaludo {
     font-size: 30px;
     color: #993bd7;
     font-weight: bolder;
+    display: flex;
+    width: 300px;
   }
 
   .subtitulo {
@@ -1812,11 +1923,10 @@ footer {
 
   #cajat1 {
     display: grid;
-    width: 500px;
-    height: 400px;
+    display: flex;
     justify-content: start;
     background-position: right;
-    padding: 5%;
+    padding-top: 130px;
     justify-content: left;
   }
 
@@ -1824,54 +1934,27 @@ footer {
     font-size: 16px;
     margin-top: 4%;
     font-weight: normal;
+    width: 650px;
   }
 
   #aboutme {
     display: flex;
     align-content: center;
     justify-content: left;
-    padding-bottom: 1%;
-  }
-
-  #logros {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1%;
-  }
-  #logros .caja2 {
-    display: grid;
-    height: 150px;
-    margin: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  #skills {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1%;
-    justify-content: left;
-  }
-  #skills .caja3 {
-    display: grid;
-    height: 150px;
-    margin: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   #hobbies {
     display: flex;
     align-content: center;
+    align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 1%;
+    height: 200px;
   }
   #hobbies .astrology {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/astrology2-04-04.png);
+    background-image: url(../../imagenes/astrology.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1880,14 +1963,14 @@ footer {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/arte2-03.png);
+    background-image: url(../../imagenes/arte.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   #hobbies .viajar {
     display: flex;
-    background-image: url(../../imagenes/viaje-02-02.png);
+    background-image: url(../../imagenes/viaje.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1904,16 +1987,47 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  #logros {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-content: center;
+  }
+  #logros .caja2 {
+    display: grid;
+    height: 150px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 200px;
+  }
+  #skills .caja3 {
+    display: grid;
+    display: flex;
+    width: 300px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+  }
 }
 /* TABLET */
 @media (min-width: 480px) and (max-width: 1023px) {
   #grilla-aboutme {
     display: grid;
-    grid-template-areas: "header header header" "foto foto foto" "texto1 texto1 texto1" "hobbies hobbies hobbies" "logros logros logros" "skills skills skills" "footer footer footer";
+    grid-template-areas: "header" "foto" "texto" "hobbies" "logros" "skills" "footer";
+    width: auto;
     grid-template-rows: auto;
-    grid-template-columns: 4fr 4fr 4fr;
-    height: auto;
-    margin: 0;
+    grid-template-columns: auto;
+    height: 100vh;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
   }
@@ -1923,12 +2037,8 @@ footer {
   #grilla-aboutme .caja1 {
     grid-area: foto;
   }
-  #grilla-aboutme #cajat1 {
-    grid-area: texto1;
-    display: flex;
-  }
-  #grilla-aboutme div#skills {
-    grid-area: skills;
+  #grilla-aboutme .cajat1 {
+    grid-area: texto;
   }
   #grilla-aboutme #hobbies {
     grid-area: hobbies;
@@ -1936,24 +2046,30 @@ footer {
   #grilla-aboutme div#logros {
     grid-area: logros;
   }
+  #grilla-aboutme div#skills {
+    grid-area: skills;
+  }
   #grilla-aboutme footer {
     grid-area: footer;
   }
 
   .caja1 {
     display: flex;
-    height: 400px;
+    flex-direction: column;
+    align-content: center;
+    width: 600px;
     background-image: url(../../imagenes/About_me.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
   }
 
   .tituloSaludo {
-    font-size: 32px;
+    font-size: 30px;
     color: #993bd7;
     font-weight: bolder;
+    display: flex;
+    width: 300px;
   }
 
   .subtitulo {
@@ -1965,66 +2081,41 @@ footer {
 
   #cajat1 {
     display: grid;
-    width: 300px;
-    padding-top: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: space-between;
+    display: flex;
     background-position: center;
+    justify-content: center;
+    height: fit-content;
   }
 
   .parrafoUno {
     font-size: 16px;
-    margin-top: 4%;
+    margin-top: 50px;
     font-weight: normal;
+    width: 650px;
   }
 
   #aboutme {
     display: flex;
+    flex-direction: column;
     align-content: center;
-    justify-content: left;
-    padding-bottom: 20%;
-  }
-
-  #logros {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5%;
-  }
-  #logros .caja2 {
-    display: grid;
-    height: 150px;
-    margin: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  #skills {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5%;
-    justify-content: center;
-  }
-  #skills .caja3 {
-    display: grid;
-    height: 150px;
-    margin: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   #hobbies {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-content: center;
-    justify-content: space-evenly;
-    padding-bottom: 5%;
+    align-items: center;
+    height: 1100px;
+    margin-left: 20px;
+    padding-top: 45%;
+    padding-bottom: 9%;
   }
   #hobbies .astrology {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/astrology2-04-04.png);
+    background-image: url(../../imagenes/astrology.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2033,14 +2124,14 @@ footer {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/arte2-03.png);
+    background-image: url(../../imagenes/arte.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   #hobbies .viajar {
     display: flex;
-    background-image: url(../../imagenes/viaje-02-02.png);
+    background-image: url(../../imagenes/viaje.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2057,86 +2148,16 @@ footer {
     text-align: center;
     justify-content: center;
   }
-}
-/* MOBILE */
-@media (max-width: 479px) {
-  #grilla-aboutme {
-    display: grid;
-    grid-template-areas: "header" "foto" "texto1" "hobbies" "logros" "skills" "footer";
-    grid-template-rows: 0.8fr 4fr 4fr 2fr 2fr 2fr 0.5fr;
-    grid-template-columns: auto;
-    height: auto;
-    margin: 0;
-    grid-row-gap: 10px;
-    grid-column-gap: 5px;
-  }
-  #grilla-aboutme header {
-    grid-area: header;
-  }
-  #grilla-aboutme .caja1 {
-    grid-area: foto;
-  }
-  #grilla-aboutme #cajat1 {
-    grid-area: texto1;
-    display: flex;
-  }
-  #grilla-aboutme #skills {
-    grid-area: skills;
-  }
-  #grilla-aboutme #hobbies {
-    grid-area: hobbies;
-  }
-  #grilla-aboutme #logros {
-    grid-area: logros;
-  }
-  #grilla-aboutme footer {
-    grid-area: footer;
-  }
-
-  .caja1 {
-    display: flex;
-    height: 400px;
-    background-image: url(../../imagenes/About_me.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-  }
-
-  .tituloSaludo {
-    font-size: 24px;
-    color: #993bd7;
-    font-weight: bolder;
-  }
-
-  .subtitulo {
-    font-size: 18px;
-    color: #048DBE;
-    font-weight: bolder;
-    flex-direction: row;
-  }
-
-  #cajat1 {
-    display: grid;
-    width: 300px;
-    padding-top: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: space-between;
-    background-position: center;
-  }
-
-  .parrafoUno {
-    font-size: 16px;
-    margin-top: 10%;
-    font-weight: normal;
-  }
 
   #logros {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1%;
-    margin: 30px;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 25%;
+    padding-top: 10%;
   }
   #logros .caja2 {
     display: grid;
@@ -2149,32 +2170,116 @@ footer {
   #skills {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1%;
-    justify-content: center;
+    align-content: center;
+    height: 200px;
   }
   #skills .caja3 {
+    display: grid;
     display: flex;
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-size: auto;
+    width: 300px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+  }
+}
+/* MOBILE */
+@media (max-width: 479px) {
+  #grilla-aboutme {
+    display: grid;
+    grid-template-areas: "header" "foto" "texto" "hobbies" "logros" "skills" "footer";
+    width: auto;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    height: 100vh;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+  }
+  #grilla-aboutme header {
+    grid-area: header;
+  }
+  #grilla-aboutme .caja1 {
+    grid-area: foto;
+  }
+  #grilla-aboutme .cajat1 {
+    grid-area: texto;
+  }
+  #grilla-aboutme #hobbies {
+    grid-area: hobbies;
+  }
+  #grilla-aboutme div#logros {
+    grid-area: logros;
+  }
+  #grilla-aboutme div#skills {
+    grid-area: skills;
+  }
+  #grilla-aboutme footer {
+    grid-area: footer;
+  }
+
+  .caja1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    background-image: url(../../imagenes/About_me.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
+  .tituloSaludo {
+    font-size: 24px;
+    color: #993bd7;
+    font-weight: bolder;
+    display: flex;
+    width: 300px;
+  }
+
+  .subtitulo {
+    font-size: 24px;
+    color: #048DBE;
+    font-weight: bolder;
+    flex-direction: row;
+  }
+
+  #cajat1 {
+    display: grid;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .parrafoUno {
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: normal;
+    width: 350px;
+  }
+
+  #aboutme {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
   #hobbies {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-content: center;
-    justify-content: space-evenly;
-    padding-bottom: 1%;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-items: center;
+    height: 1200px;
+    padding-top: 500px;
+    padding-bottom: 30px;
   }
   #hobbies .astrology {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/astrology2-04-04.png);
+    background-image: url(../../imagenes/astrology.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2183,14 +2288,14 @@ footer {
     display: flex;
     width: 150px;
     height: 150px;
-    background-image: url(../../imagenes/arte2-03.png);
+    background-image: url(../../imagenes/arte.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
   #hobbies .viajar {
     display: flex;
-    background-image: url(../../imagenes/viaje-02-02.png);
+    background-image: url(../../imagenes/viaje.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -2200,12 +2305,233 @@ footer {
 
   .texto-banner {
     font-size: 16px;
-    width: 100px;
+    width: 200px;
     font-family: "Comfortaa", sans-serif;
     src: url(fuentes/Comfortaa/Comfortaa.ttf);
-    margin-top: 140px;
+    margin-top: 160px;
     text-align: center;
+    justify-content: center;
+  }
+
+  #logros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 450px;
+    padding-top: 50px;
+  }
+  #logros .caja2 {
+    display: grid;
+    height: 150px;
+    padding: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 350px;
+    margin: 20px;
+  }
+  #skills .caja3 {
+    display: grid;
+    display: flex;
+    width: 300px;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+  }
+}
+/* ------CONTACTO------ */
+/* DESKTOP */
+@media (min-width: 1024px) {
+  #fondo-contacto {
+    background-image: url(../../imagenes/contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  #datos-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3%;
+  }
+
+  .button-contacto {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    height: 500px;
+  }
+
+  .titulo-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .linea-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: large;
+    text-decoration: none;
+    margin-top: 130px;
+    align-self: center;
+  }
+
+  .texto-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: large;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .icono-contacto {
+    height: 105px;
+    width: 130px;
+  }
+  .icono-contacto:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
+}
+/* TABLET */
+@media (min-width: 549px) and (max-width: 1023px) {
+  #fondo-contacto {
+    background-image: url(../../imagenes/contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 600px;
+  }
+
+  #datos-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+  }
+
+  .button-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+  }
+
+  .titulo-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .linea-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: medium;
+    text-decoration: none;
+    margin-top: 100px;
+    align-self: center;
+  }
+
+  .texto-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: medium;
+    text-align: center;
+    margin-top: 3%;
+    width: auto;
+    padding: 3%;
+  }
+
+  .icono-contacto {
+    height: 80px;
+    width: 95px;
+  }
+  .icono-contacto:hover {
+    transform: scale(1.1);
+    background-color: none;
+  }
+}
+/* MOBILE */
+@media (max-width: 550px) {
+  #fondo-contacto {
+    background-image: url(../../imagenes/contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: none;
+    height: 800px;
+  }
+
+  #datos-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-contacto {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .titulo-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .linea-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: large;
+    text-decoration: none;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 160px;
+  }
+
+  .texto-contacto {
+    color: #634478;
+    font-weight: normal;
+    font-size: medium;
+    width: fit-content;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .icono-contacto {
+    height: 150px;
+    width: 175px;
+  }
+  .icono-contacto:hover {
+    transform: scale(1.1);
+    background-color: none;
   }
 }
 
